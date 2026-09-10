@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "EP01",
+  "status": "draft",
+  "target_duration_s": 30,
+  "duration_tolerance_s": 0.1,
+  "speech_rate_assumption_chars_per_s": 4,
+  "pause_allowance_s": 0.8,
+  "shots": [
+    {
+      "shot_id": "EP01_SH001",
+      "scene_id": "SC01",
+      "source_refs": [
+        "source.md#P001",
+        "script.md#B01"
+      ],
+      "purpose": "建立遗物与人物相对位置",
+      "framing": "中景",
+      "angle": "柜台东端平视",
+      "camera_move": "静帧后期轻推",
+      "action": "林夏将旧表放在柜台，手指停在表边；林舟在对面看着她。",
+      "dialogue": [],
+      "voiceover": "",
+      "sfx": "时钟滴答",
+      "edit_duration_s": 5,
+      "generation_duration_s": null,
+      "recorded_audio_duration_s": null,
+      "asset_ids": [
+        "C001",
+        "C002",
+        "L001",
+        "P001",
+        "SFX001"
+      ],
+      "continuity_in": "旧表在林夏手中；林舟在柜台对面",
+      "continuity_out": "旧表落在柜台；两人位置不变",
+      "production_method": "静帧运镜",
+      "post_notes": ""
+    },
+    {
+      "shot_id": "EP01_SH002",
+      "scene_id": "SC01",
+      "source_refs": [
+        "source.md#P002",
+        "script.md#B02"
+      ],
+      "purpose": "提出卖表与经济压力",
+      "framing": "近景",
+      "angle": "从柜台东端看林舟",
+      "camera_move": "固定构图",
+      "action": "林舟的手将当票推到柜台中央。",
+      "dialogue": [
+        {
+          "speaker_id": "C002",
+          "text": "卖了，够交三个月房租。"
+        }
+      ],
+      "voiceover": "",
+      "sfx": "",
+      "edit_duration_s": 5,
+      "generation_duration_s": null,
+      "recorded_audio_duration_s": null,
+      "asset_ids": [
+        "C002",
+        "L001",
+        "P001",
+        "P002"
+      ],
+      "continuity_in": "旧表在柜台；当票在林舟手边",
+      "continuity_out": "当票留在柜台中央；旧表不移动",
+      "production_method": "静帧运镜",
+      "post_notes": "用推到位的静帧配纸张摩擦声暗示动作；口型可不正面强调。"
+    },
+    {
+      "shot_id": "EP01_SH003",
+      "scene_id": "SC01",
+      "source_refs": [
+        "source.md#P003",
+        "source.md#P004",
+        "script.md#B03"
+      ],
+      "purpose": "由撬痕引出怀疑",
+      "framing": "近景",
+      "angle": "同轴线看林夏",
+      "camera_move": "静帧后期轻推",
+      "action": "林夏拿起旧表，指尖停在撬痕处，目光转向林舟。",
+      "dialogue": [
+        {
+          "speaker_id": "C001",
+          "text": "你动过它？"
+        }
+      ],
+      "voiceover": "",
+      "sfx": "",
+      "edit_duration_s": 4,
+      "generation_duration_s": null,
+      "recorded_audio_duration_s": null,
+      "asset_ids": [
+        "C001",
+        "L001",
+        "P001",
+        "P002"
+      ],
+      "continuity_in": "旧表在柜台；当票已推到中间",
+      "continuity_out": "旧表在林夏手中；她怀疑林舟",
+      "production_method": "静帧运镜",
+      "post_notes": "撬痕的细节不强求在脸部近景清晰；下镜开盖动作承接已松动后盖。林舟回避可由画外不回答表达。"
+    },
+    {
+      "shot_id": "EP01_SH004",
+      "scene_id": "SC01",
+      "source_refs": [
+        "source.md#P004",
+        "source.md#P005",
+        "script.md#B04"
+      ],
+      "purpose": "取出并展开藏纸",
+      "framing": "特写",
+      "angle": "柜台上方俯视",
+      "camera_move": "固定构图，静帧后期轻推",
+      "action": "开盖的旧表置于台面；林夏右手正在从盖板夹层抽出折好的纸片。",
+      "dialogue": [],
+      "voiceover": "",
+      "sfx": "轻微金属碰触与纸张摩擦声",
+      "edit_duration_s": 7,
+      "generation_duration_s": null,
+      "recorded_audio_duration_s": null,
+      "asset_ids": [
+        "C001",
+        "L001",
+        "P001",
+        "P002",
+        "P003"
+      ],
+      "continuity_in": "切镜省略放回与开盖；旧表已开盖置于台面，纸片仍夹在盖板间",
+      "continuity_out": "折纸在林夏右手；旧表开盖仍在台面；当票留在柜台",
+      "production_method": "静帧运镜",
+      "post_notes": "只做取出折纸这一确定瞬间的关键帧；以切镜省略放回与开盖，以纸张摩擦声辅助理解。下一镜直接切到已展开纸条，展开动作省略。底图不要生成纸条文字。"
+    },
+    {
+      "shot_id": "EP01_SH005",
+      "scene_id": "SC01",
+      "source_refs": [
+        "source.md#P005",
+        "script.md#B05"
+      ],
+      "purpose": "揭示身份矛盾",
+      "framing": "大特写",
+      "angle": "沿上一镜俯视方向",
+      "camera_move": "后期裁切推进",
+      "action": "纸片被林夏双手展开停住，观众读到纸条。",
+      "dialogue": [],
+      "voiceover": "",
+      "sfx": "",
+      "edit_duration_s": 4,
+      "generation_duration_s": null,
+      "recorded_audio_duration_s": null,
+      "asset_ids": [
+        "C001",
+        "P003"
+      ],
+      "continuity_in": "切镜省略展开过程，纸条已展开，仍在林夏手中",
+      "continuity_out": "纸条仍在林夏手中；观众读到新线索",
+      "production_method": "后期合成",
+      "post_notes": "后期准确叠字：林舟不是你哥哥。保持至少可读停留；不依赖生图模型准确写字。"
+    },
+    {
+      "shot_id": "EP01_SH006",
+      "scene_id": "SC01",
+      "source_refs": [
+        "source.md#P006",
+        "script.md#B06"
+      ],
+      "purpose": "控制出口并留下悬念",
+      "framing": "近景",
+      "angle": "同轴线平视林舟",
+      "camera_move": "静帧后期缓推",
+      "action": "林舟从右侧衣袋取出遥控器按下，抬到胸前，盯住林夏。",
+      "dialogue": [
+        {
+          "speaker_id": "C002",
+          "text": "爸还写了什么？"
+        }
+      ],
+      "voiceover": "",
+      "sfx": "画外卷帘落下声",
+      "edit_duration_s": 5,
+      "generation_duration_s": null,
+      "recorded_audio_duration_s": null,
+      "asset_ids": [
+        "C002",
+        "L001",
+        "P004",
+        "SFX002"
+      ],
+      "continuity_in": "遥控器在林舟右侧衣袋；纸条仍在林夏手中",
+      "continuity_out": "遥控器在林舟手中；卷帘已落；林夏仍持纸条",
+      "production_method": "静帧运镜",
+      "post_notes": "采用遥控器刚按下并抬到胸前的静帧；取出动作可由声音与切镜省略。卷帘不必完整动画展示。"
+    }
+  ]
+}

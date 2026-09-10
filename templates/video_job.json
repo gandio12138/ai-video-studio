@@ -1,0 +1,24 @@
+{
+  "schema_version": "2.0",
+  "shot_id": "EP01_SH001",
+  "status": "planned",
+  "job_ref": null,
+  "keyframe_refs": [],
+  "audio_ref": null,
+  "action": "待填写",
+  "camera_motion": "待填写",
+  "continuity_in": "待填写",
+  "continuity_out": "待填写",
+  "planned_edit_duration_ms": null,
+  "generation_duration_s": null,
+  "actual_duration_ms": null,
+  "source_in_ms": null,
+  "selected_take": null,
+  "native_audio_policy": "drop",
+  "lipsync": {
+    "required": false,
+    "adapter": null,
+    "status": "not_configured"
+  },
+  "review_status": "not_reviewed"
+}

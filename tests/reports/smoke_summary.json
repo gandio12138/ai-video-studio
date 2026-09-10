@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "cloud_calls": 0,
+  "duration_s": 4,
+  "frames": 120,
+  "resolution": [
+    180,
+    320
+  ],
+  "checks": [
+    "dry-run produces no media",
+    "image hold + video source trim + hard cut",
+    "audio source trim + positioning + fades + multitrack mix",
+    "sidecar SRT copied",
+    "soft subtitles stream muxed",
+    "explicit silent-audio behavior",
+    "full decode + dimensions + 120-frame check",
+    "refuse overwrite",
+    "actual before/after cut frames differ",
+    "delayed audio event amplitude timing"
+  ],
+  "human_or_ai_voice_tested": false,
+  "macos_tested": false,
+  "paid_provider_tested": false
+}

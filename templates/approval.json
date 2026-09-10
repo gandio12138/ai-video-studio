@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.0",
+  "approval_id": "APPROVAL_001",
+  "status": "pending",
+  "scope_job_ids": [],
+  "scope_request_fingerprints": [],
+  "provider": null,
+  "model": null,
+  "currency": "CNY",
+  "max_cost": 0,
+  "max_attempts_per_job": 1,
+  "data_upload_scope": [],
+  "user_statement": null,
+  "confirmed_at": null,
+  "expires_at": null,
+  "note": "仅当有用户明确证据时填写，不是 agent 自批，也不是防篡改签名。"
+}

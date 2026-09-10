@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0",
+  "shot_id": "EP01_SH001",
+  "asset_id": "IMG_EP01_SH001_v01",
+  "status": "planned",
+  "job_ref": null,
+  "operation": "generate",
+  "references": [],
+  "prompt_ref": null,
+  "edit_region": null,
+  "preserve": [],
+  "output_path": null,
+  "output_sha256": null,
+  "review_status": "not_reviewed"
+}

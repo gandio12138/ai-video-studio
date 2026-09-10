@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "EP01",
+  "status": "draft",
+  "target_duration_s": 60,
+  "duration_tolerance_s": 2,
+  "speech_rate_assumption_chars_per_s": 4,
+  "pause_allowance_s": 0.8,
+  "shots": []
+}

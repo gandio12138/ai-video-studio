@@ -1,0 +1,26 @@
+{
+  "schema_version": "2.0",
+  "status": "draft",
+  "characters": [
+    {
+      "character_id": "C001",
+      "voice_version": "VC_C001_v01",
+      "description": {
+        "range": "待定",
+        "texture": "待定",
+        "accent": "普通话（暂定）",
+        "pace": "待试音",
+        "invariants": []
+      },
+      "provider": null,
+      "model": null,
+      "provider_voice_id": null,
+      "voice_source": "licensed_builtin_pending",
+      "rights_reference": null,
+      "consent_reference": null,
+      "auditions": [],
+      "selected_take": null,
+      "approval_reference": null
+    }
+  ]
+}

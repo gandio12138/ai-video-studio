@@ -1,0 +1,16 @@
+{
+  "schema_version": "2.0",
+  "mode": "plan",
+  "external_generation_allowed": false,
+  "approved_external_budget": {
+    "currency": "CNY",
+    "limit": 0,
+    "approval_ref": null
+  },
+  "cloud_auto_retry": false,
+  "max_attempts_per_job_proposed": 2,
+  "max_parallel_jobs": 1,
+  "overwrite_approved_files": false,
+  "auto_publish": false,
+  "policy_note": "工作约定；不是账户级消费限额或可执行安全沙箱。无云适配器。"
+}

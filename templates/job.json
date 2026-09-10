@@ -1,0 +1,31 @@
+{
+  "schema_version": "2.0",
+  "job_id": "EP01_JOB_001",
+  "episode_id": "EP01",
+  "type": "tts",
+  "status": "planned",
+  "provider": null,
+  "model": null,
+  "input_refs": [],
+  "parameters": {
+    "line_id": "EP01_DL001",
+    "voice_version": "VC_C001_v01",
+    "text": null
+  },
+  "request_fingerprint": null,
+  "approval_ref": null,
+  "budget": {
+    "currency": "CNY",
+    "max_cost": 0,
+    "estimated_cost": null,
+    "estimate_source": null,
+    "actual_cost": null
+  },
+  "attempt": 0,
+  "max_attempts": 2,
+  "provider_job_id": null,
+  "outputs": [],
+  "error": null,
+  "review_status": "not_reviewed",
+  "depends_on": []
+}

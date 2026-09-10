@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.0",
+  "episode_id": "EP01",
+  "status": "draft",
+  "cues": [
+    {
+      "cue_id": "EP01_SFX001",
+      "kind": "sfx",
+      "shot_id": "EP01_SH001",
+      "purpose": "待填写",
+      "asset_ref": null,
+      "license_ref": null,
+      "start_frame": null,
+      "duration_frames": null,
+      "gain_db": null,
+      "fade_in_frames": 0,
+      "fade_out_frames": 0,
+      "dialogue_ducking_plan": null
+    }
+  ]
+}

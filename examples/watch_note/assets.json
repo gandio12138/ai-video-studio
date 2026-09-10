@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "assets": [
+    {
+      "asset_id": "C001",
+      "kind": "character",
+      "label": "林夏",
+      "status": "planned",
+      "path": null
+    },
+    {
+      "asset_id": "C002",
+      "kind": "character",
+      "label": "林舟",
+      "status": "planned",
+      "path": null
+    },
+    {
+      "asset_id": "L001",
+      "kind": "scene",
+      "label": "旧钟表修理铺夜景",
+      "status": "planned",
+      "path": null
+    },
+    {
+      "asset_id": "P001",
+      "kind": "prop",
+      "label": "旧表，含闭合和开盖状态",
+      "status": "planned",
+      "path": null
+    },
+    {
+      "asset_id": "P002",
+      "kind": "prop",
+      "label": "当票",
+      "status": "planned",
+      "path": null
+    },
+    {
+      "asset_id": "P003",
+      "kind": "prop",
+      "label": "折纸条",
+      "status": "planned",
+      "path": null
+    },
+    {
+      "asset_id": "P004",
+      "kind": "prop",
+      "label": "卷帘遥控器",
+      "status": "planned",
+      "path": null
+    },
+    {
+      "asset_id": "SFX001",
+      "kind": "sound",
+      "label": "店内时钟底声",
+      "status": "planned",
+      "path": null
+    },
+    {
+      "asset_id": "SFX002",
+      "kind": "sound",
+      "label": "卷帘落下声",
+      "status": "planned",
+      "path": null
+    }
+  ]
+}

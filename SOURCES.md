@@ -1,0 +1,21 @@
+# 官方资料与实现依据
+查阅日期：2026-09-10。以下用于技能发现、项目规则、TTS/视频接口边界与FFmpeg实现；本包的角色流程、JSON契约、预算默认值和审批关卡是本项目设计，不是官方统一规范。
+
+1. OpenAI：Build skills（项目级 .agents/skills、SKILL.md、显式调用与发现）
+   https://developers.openai.com/codex/skills/
+   当前访问会跳转至 https://learn.chatgpt.com/docs/build-skills
+2. OpenAI：Custom instructions with AGENTS.md（项目指令发现与覆盖）
+   https://developers.openai.com/codex/guides/agents-md/
+3. OpenAI：Text to speech（speech接口、音色、语音生成提示、AI声音披露、自定义声音许可要求）
+   https://developers.openai.com/api/docs/guides/text-to-speech
+4. MiniMax：接口概览（视频异步任务、语音/TTS/音色能力、不同模态接口）
+   https://platform.minimaxi.com/docs/api-reference/api-overview
+   本包没有实现或绑定某个具体模型；接入时需再查具体API、账户支持、区域、计价与响应格式。
+5. FFmpeg：命令行工具文档（媒体输入/输出、映射与编解码）
+   https://ffmpeg.org/ffmpeg.html
+6. FFmpeg：滤镜文档（scale/pad/crop、音频裁切/延时/混合、字幕、限幅/响度工具）
+   https://ffmpeg.org/ffmpeg-filters.html
+7. FFmpeg：ffprobe（媒体流/容器信息、机器可读输出）
+   https://ffmpeg.org/ffprobe.html
+
+包内工具和文档不是上述项目的官方作品。模型参数、价格、平台规定可能改变；未核实项不硬编码。字幕显示、字体许可、发布规格、最终响度仍需按用户实际目标核实。

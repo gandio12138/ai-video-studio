@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0",
+  "active": {
+    "image": null,
+    "tts": null,
+    "video": null,
+    "alignment": null,
+    "music": null,
+    "lipsync": null,
+    "editor": "ffmpeg_preview"
+  },
+  "adapters": {
+    "manual_import": {
+      "status": "documented",
+      "capabilities": [
+        "import_image",
+        "import_audio",
+        "import_video"
+      ],
+      "implementation": "agent-guided local import; user must provide files and provenance"
+    },
+    "minimax_speech": {
+      "status": "unconfigured",
+      "capabilities": [
+        "tts"
+      ],
+      "implementation": null,
+      "model": null,
+      "secret_env": "MINIMAX_API_KEY"
+    },
+    "openai_speech": {
+      "status": "unconfigured",
+      "capabilities": [
+        "tts"
+      ],
+      "implementation": null,
+      "model": null,
+      "secret_env": "OPENAI_API_KEY"
+    },
+    "cloud_image": {
+      "status": "unconfigured",
+      "capabilities": [
+        "image_generate",
+        "image_edit"
+      ],
+      "implementation": null
+    },
+    "cloud_video": {
+      "status": "unconfigured",
+      "capabilities": [
+        "image_to_video"
+      ],
+      "implementation": null,
+      "model": null
+    },
+    "speech_alignment": {
+      "status": "unconfigured",
+      "capabilities": [
+        "alignment"
+      ],
+      "implementation": null
+    },
+    "music_sfx": {
+      "status": "unconfigured",
+      "capabilities": [
+        "music",
+        "sfx"
+      ],
+      "implementation": null
+    },
+    "lipsync": {
+      "status": "unconfigured",
+      "capabilities": [
+        "lipsync"
+      ],
+      "implementation": null
+    },
+    "ffmpeg_preview": {
+      "status": "implemented_requires_local_binaries",
+      "capabilities": [
+        "hard_cuts",
+        "still_hold",
+        "trim",
+        "audio_mix",
+        "sidecar_srt",
+        "soft_subtitles"
+      ],
+      "implementation": "tools/studio.py render"
+    },
+    "nle_export": {
+      "status": "unconfigured",
+      "capabilities": [
+        "native_project_export"
+      ],
+      "implementation": null
+    }
+  },
+  "note": "没有 API 请求代码；环境变量名不是密钥，配置项非空也不代表服务已接通。"
+}

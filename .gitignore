@@ -1,0 +1,32 @@
+.DS_Store
+__MACOSX/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+# 如需 Git，请先决定小说和媒体是否允许提交；不要默认推送到远端。
+06_assets/generated/*
+!06_assets/generated/README.md
+
+# v2 private/runtime media
+.env
+.env.*
+!.env.example
+08_audio/takes/*
+!08_audio/takes/README.md
+08_audio/mix/*
+!08_audio/mix/README.md
+09_video/clips/*
+!09_video/clips/README.md
+10_edit/proxies/*
+!10_edit/proxies/README.md
+11_exports/previews/*
+!11_exports/previews/README.md
+11_exports/delivery/*
+!11_exports/delivery/README.md
+12_runs/logs/*
+!12_runs/logs/README.md
+__pycache__/
+*.pyc
+.render_*/

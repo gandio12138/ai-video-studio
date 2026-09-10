@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "episode_id": "EP01",
+  "status": "draft",
+  "script_ref": {
+    "path": "examples/watch_note/script.md",
+    "sha256": null
+  },
+  "lines": [
+    {
+      "line_id": "EP01_DL001",
+      "speaker_id": "C002",
+      "voice_version": "VC_C002_v01",
+      "spoken_text": "卖了，够交三个月房租。",
+      "subtitle_text": "卖了，够交三个月房租。",
+      "direction": "装作随意，句尾不要急。",
+      "pronunciation": [],
+      "planned_duration_ms": null,
+      "selected_take": null,
+      "takes": [],
+      "shot_ids": [
+        "EP01_SH002"
+      ]
+    },
+    {
+      "line_id": "EP01_DL002",
+      "speaker_id": "C001",
+      "voice_version": "VC_C001_v01",
+      "spoken_text": "你动过它？",
+      "subtitle_text": "你动过它？",
+      "direction": "压住疑心，重读“动过”。",
+      "pronunciation": [],
+      "planned_duration_ms": null,
+      "selected_take": null,
+      "takes": [],
+      "shot_ids": [
+        "EP01_SH003"
+      ]
+    },
+    {
+      "line_id": "EP01_DL003",
+      "speaker_id": "C002",
+      "voice_version": "VC_C002_v01",
+      "spoken_text": "爸还写了什么？",
+      "subtitle_text": "爸还写了什么？",
+      "direction": "音量略低，语气收紧。",
+      "pronunciation": [
+        {
+          "text": "爸",
+          "reading": "bà"
+        }
+      ],
+      "planned_duration_ms": null,
+      "selected_take": null,
+      "takes": [],
+      "shot_ids": [
+        "EP01_SH006"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "2.0",
+  "episode_id": "EP01",
+  "status": "draft",
+  "script_ref": {
+    "path": null,
+    "sha256": null
+  },
+  "lines": [
+    {
+      "line_id": "EP01_DL001",
+      "speaker_id": "C001",
+      "voice_version": "VC_C001_v01",
+      "spoken_text": "待填写可朗读台词",
+      "subtitle_text": "待填写字幕文本",
+      "direction": "表演指导，不朗读",
+      "pronunciation": [],
+      "planned_duration_ms": null,
+      "selected_take": null,
+      "takes": [],
+      "shot_ids": [
+        "EP01_SH001"
+      ]
+    }
+  ]
+}

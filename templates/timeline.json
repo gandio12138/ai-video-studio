@@ -1,0 +1,14 @@
+{
+  "schema_version": "2.0",
+  "episode_id": "EP01",
+  "status": "draft",
+  "fps_num": 30,
+  "fps_den": 1,
+  "width": 540,
+  "height": 960,
+  "duration_frames": 1800,
+  "video": [],
+  "audio": [],
+  "subtitles": null,
+  "notes": "草稿模板：没有真实素材，不能渲染。填表例子见 examples/production_plan。"
+}

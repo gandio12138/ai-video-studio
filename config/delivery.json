@@ -1,0 +1,14 @@
+{
+  "schema_version": "2.0",
+  "profile": "preview_draft",
+  "width": 540,
+  "height": 960,
+  "fps_num": 30,
+  "fps_den": 1,
+  "audio_sample_rate": 48000,
+  "subtitle_mode": "sidecar",
+  "integrated_loudness_lufs": null,
+  "true_peak_dbtp": null,
+  "publication_platform": null,
+  "user_approved": false
+}

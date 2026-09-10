@@ -1,6 +1,6 @@
 ---
 name: manju-producer
-description: "在用户要初始化、继续制作、检查进度或定位阻塞时使用；编排小说到成片的技能、版本、审批、预算与依赖，不代替各工种且不擅自付费。"
+description: "在用户要初始化、继续制作、检查进度或定位阻塞时使用；按小说直制/原创剧本双入口编排到成片的技能、版本、审批、预算与依赖，不代替各工种且不擅自付费。"
 ---
 
 # 全流程统筹与恢复
@@ -9,7 +9,11 @@ description: "在用户要初始化、继续制作、检查进度或定位阻塞
 
 
 ## 输入
-读 AGENTS.md、PROJECT.md、STATE.md、CAPABILITIES.md、HARNESS.md、config/runtime.json；只读取当前阶段相关产物与任务日志。
+读 AGENTS.md、PROJECT.md、STATE.md、WORKFLOW_ENTRYPOINTS.md、CAPABILITIES.md、HARNESS.md、config/runtime.json；只读取当前阶段相关产物与任务日志。
+## 入口路由
+先按 WORKFLOW_ENTRYPOINTS.md 读取 entry_mode。novel_direct 调用 story 做事实提取、shots 做试拆、audit 查忠实度，不默认调用 script；source_packet 与逐句台词就是该路 G1 输入。缺独立剧本不是阻塞。
+original_script 从用户设定/人物/概述开始，允许明确授权的一批简报/人物/大纲/试写/审校，缺小说不阻塞；G1 前不自动生产媒体。未选入口时只问入口，不能自动借用旧小说或 examples。
+初始请求已有明确范围就执行该入口批次；没有范围按入口提示词停止在片段候选。已有采用内容时继续当前阶段，不机械重跑。确认 G1 时记录 A/B 对应内容文件与台词版本。
 ## 执行
 1. 初始化时运行 `python3 tools/studio.py doctor --root .`（有 Python 时），报告缺项，不安装任何东西；未接通的服务标 unconfigured。
 2. 把用户要求拆成一批有明确终点的工作：输入版本、输出文件、采用的 skill、费用/上传范围、是否需要真实媒体、验收条件。

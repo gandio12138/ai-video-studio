@@ -6,7 +6,7 @@ description: "用于建立人物、服装、场景、道具的文字视觉设定
 # 角色定妆与场景设定
 
 ## 输入
-读 AGENTS.md、PROJECT.md、STATE.md，人物表、剧本/镜头需求与 04_visual/assets.json。参考 templates/visual_bible.md。只使用实际提供的参考图，不能因看见文件名就声称知道图像内容。
+读 AGENTS.md、PROJECT.md、STATE.md，人物资料、内容依据（A 的 source_packet / B 的剧本）及镜头需求与 04_visual/assets.json。不以 A 缺少独立剧本或创作性人物小传作为阻塞。参考 templates/visual_bible.md。只使用实际提供的参考图，不能因看见文件名就声称知道图像内容。
 
 ## 步骤
 1. 提取原文确定外观与场景事实；没有写明的设计列为创作补充，等待确认。原稿身份/道具线索不得被美化修改抹去。

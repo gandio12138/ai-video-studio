@@ -1,17 +1,17 @@
 ---
 name: manju-shots
-description: "用于把已确认的场景剧本拆成可制作的文字镜头表，填写景别、机位、动作、对白、音效、采用时长和素材编号。不生成图片或冒充视频接口工作流。"
+description: "用于把小说原文制作依据或原创剧本拆成可制作的文字镜头表，填写景别、机位、动作、对白、音效、采用时长和素材编号。不生成图片或冒充视频接口工作流。"
 ---
 
 # 文字分镜与镜头表
 
 ## 输入
-读 AGENTS.md、PROJECT.md、STATE.md 与已确认剧本；读 templates/shot_fields.md 和 templates/shotlist.json。读取 04_visual/assets.json 及已有视觉设定。无确认剧本时先说明，只按用户授权做试拆。
+读 AGENTS.md、WORKFLOW_ENTRYPOINTS.md、PROJECT.md、STATE.md。novel_direct 读本轮 source_packet、事实表、原文定位与逐句台词，不要求独立剧本；original_script 读采用剧本和逐句台词。读 templates/shot_fields.md、templates/shotlist.json、04_visual/assets.json 及已有视觉设定。无 G1 内容确认时只在用户明确授权下试拆；入口 A 的首轮提示词已包含此授权，输出必须 draft。
 
 ## 步骤
 1. 先列本集信息节拍，再决定镜头。一个镜头承担一个主要叙事任务，非必要不为凑数拆镜。
 2. 将人物、场景、道具、声音需求登记为稳定资产编号。缺少 assets.json 条目时可新增 planned 且 path=null 的需求项；不得改已确认资产或伪造素材文件。
-3. 每镜写景别、角度、运镜/后期裁切、可见动作、对白、旁白、音效、源剧本节拍。静态关键帧只容纳一个明确瞬间，过程另在 action 描述，不混进一张图的要求。
+3. 每镜写景别、角度、运镜/后期裁切、可见动作、对白、旁白、音效、原文/source_packet/剧本节拍定位。静态关键帧只容纳一个明确瞬间，过程另在 action 描述，不混进一张图的要求。
 4. 给 edit_duration_s；未选视频模型时 generation_duration_s=null。纯静帧也用 null。生成时长与采用时长不同；有意慢放等处理在 post_notes 解释。
 5. 给 continuity_in/out，检查关键道具从哪来、在谁哪只手、视线和相对位置是否接续。将场次 SC01 与地点资产 L001 分开。
 6. 素材需求不只写“人物图”：写具体 C001/L001/P001，以及必要的角度、表情、服装/道具状态与声音。制作方法优先考虑静帧运镜或简单后期，复杂动态图给替代方案。
@@ -24,3 +24,7 @@ description: "用于把已确认的场景剧本拆成可制作的文字镜头表
 
 ## v2 生产交接
 此表是创意/计划层，不等于剪辑时间线。对白可增加 line_id 字段，跨镜音轨在独立 timeline 仅放一次；后续 manju-voice 实测后再修订帧时长。保留原 v1 字段兼容 check_shots。
+
+## v2.1 保真与台词交接
+A 路线不改选中对白、不另写桥段；必要改动先列提案。每个 dialogue 对象带 line_id，旁白在 voiceover_line_ids 和 post_notes 中关联台词表，跨镜覆盖清楚标记。原有 check_shots 对新增关联字段不做完整校验，另人工核对引用及重复计时，不夸称其已验证。
+source_refs 可同时引用原文及 source_packet；B 引用确认剧本。原文没写的拍法是制作提案，不是小说事实。镜头时间不够时先提出延长/拆镜/拆集，不擅自删台词或把缺失剧本当阻塞。

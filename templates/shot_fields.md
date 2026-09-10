@@ -63,3 +63,8 @@ assets.json 顶层为 `schema_version` 和 `assets` 列表。每项必填 `asset
 
 ## 校验脚本的边界
 检查字段、类型、编号、时长总和、素材引用、已生成文件存在性、对白时长粗估。不能核验原文引用是否真的支持结论、空间/剧情是否合理、画面好不好看或是否拥有商用权。以上仍由 manju-audit 和人工确认处理。
+
+## v2.1 双入口兼容字段
+`source_refs` 在 A 引用原文与 source_packet，在 B 引用剧本节拍，不强制 02_scripts/EP01_vNN.md 存在。
+对白对象可追加 `line_id`，旁白对应 `voiceover_line_ids` 列表；跨镜声音在 post_notes 写覆盖关系。逐句文本唯一采用源是 EP01_lines_vNN.json，镜头只引用同版内容。
+原 v1 校验器仍只检查原有字段及逐镜时长粗估，不验证新台词引用、原文忠实度或跨镜去重；这些由 agent/audit 和人工核对。本次没有声称新增字段已获程序级校验。

@@ -54,3 +54,11 @@ line_alignment 包含 schema_version、episode_id、status=draft/verified、timi
 
 ## 本地工具限制
 validate 检查格式与部分状态，不是通用 JSON Schema 引擎；不验证故事、完整依赖图或账单总额。renderer 的 dry-run 不联网，不渲染，但可读取本地媒体测量。render --execute 真正生成本地文件并输出报告；不自动调用云端。
+
+## v2.1 双入口内容与逐句台词
+入口规范见 WORKFLOW_ENTRYPOINTS.md。G1 的内容依据在 novel_direct 是 source_packet，在 original_script 是原创剧本；不要求 A 新建独立润色剧本。
+新增 `templates/line_sheet.json` 是 agent 用的逐句文本模板，不是服务商 API，也没有新增自动执行器或完整 JSON Schema 校验器。document_type=line_sheet；entry_mode=novel_direct/original_script；status=draft/approved。content_ref 指 G1 内容依据及真实哈希，approval_ref 只记录真实批准。
+每句含 line_id、speaker_id、kind=dialogue/voiceover、spoken_text、direction、subtitle_text、source_refs、provenance=source_exact/user_given/ai_proposal/pending、normalization_notes、shot_ids、recorded_audio_duration_s。模板的 null/pending 是未知，不是合格任务。
+A 的对白/旁白选自实际原文，source_refs 可追溯；改词不再属于 source_exact，需单独批准并记录。B 的创作提案标 ai_proposal/user_given，不虚构原文出处。旁白沿用稳定台词 ID，并登记声音角色，不能因此往画面增加出镜人物。
+沿用 tts_job.script_ref 字段名避免破坏 v2 任务模板；A 可指 source_packet，B 指剧本。Job.input_refs 还需记录采用台词表、声音卡与必要参考哈希。当前工具并不自动验证 line_sheet 与剧本/原文的语义一致性，需审校与人工确认。
+本次不改变 timeline/job/alignment 的 schema_version=2.0，也不改变原 shotlist 的 schema_version=1.0；模板包版本号与不同数据契约版本不要混为一谈。

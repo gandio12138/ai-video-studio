@@ -1,0 +1,25 @@
+{
+  "package_version": "2.1",
+  "date": "2026-09-10",
+  "unit_tests_rerun": 56,
+  "unit_test_result": "passed",
+  "skill_files": 14,
+  "skill_frontmatter": "parsed",
+  "json_documents_parsed": 20,
+  "required_route_files_present": [
+    "WORKFLOW_ENTRYPOINTS.md",
+    "prompts/entry_novel_direct.md",
+    "prompts/entry_original_script.md",
+    "templates/source_packet.md",
+    "templates/line_sheet.json"
+  ],
+  "tools_unchanged_from_v2": true,
+  "default_mode": "plan",
+  "external_generation_allowed": false,
+  "media_render_rerun": false,
+  "codex_behavior_tested": false,
+  "user_mac_tested": false,
+  "cloud_api_called": false,
+  "epub_importer_added": false,
+  "notes": "Static file/reference checks and existing backend unit tests only; no claim of end-to-end agent routing or story quality."
+}

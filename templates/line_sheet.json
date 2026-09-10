@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.1",
+  "document_type": "line_sheet",
+  "episode_id": "EP01",
+  "entry_mode": null,
+  "status": "draft",
+  "content_ref": {
+    "path": null,
+    "sha256": null
+  },
+  "approval_ref": null,
+  "lines": [
+    {
+      "line_id": "EP01_DL001",
+      "speaker_id": "C001",
+      "kind": "dialogue",
+      "spoken_text": "待填写采用原句或原创试写台词",
+      "direction": "表演指导，不朗读",
+      "subtitle_text": "待填写",
+      "source_refs": [],
+      "provenance": "pending",
+      "normalization_notes": [],
+      "shot_ids": [],
+      "recorded_audio_duration_s": null
+    }
+  ]
+}

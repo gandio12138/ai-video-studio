@@ -1,50 +1,54 @@
-# 从这里开始｜AI 漫剧 Harness v2
+# 从这里开始｜AI 漫剧 Harness v2.1
 
-这是 v1 的扩展版：保留六个前期技能，新增八个制作/后期/统筹技能，共十四个。
-默认只规划，不接云端、不配音、不生图、不渲染。你可以现在写小说，以后再接配音和视频服务。
+本版保留十四个技能与后期预留，增加两个固定入口：A 有小说直接按原文制作，B 无小说直接从剧本开始。不要把两条路串成一条，也不必先写小说。
 
-## 1. 放到 Mac 桌面并启动
-解压后保留完整 `ai-manju-studio-v2` 文件夹，包括隐藏 `.agents`。
+## 1. 新项目启动
+解压完整 ai-manju-studio-v2.1 文件夹，保留隐藏 .agents。在终端进入实际目录：
 ```bash
-cd ~/Desktop/ai-manju-studio-v2
+cd ~/Desktop/ai-manju-studio-v2.1
 codex
 ```
-不要在已有小说项目上直接覆盖解压，升级旧项目先读 MIGRATION.md。
+已有项目不要覆盖解压，先读 MIGRATION.md；也可使用独立的 v2.1-update 更新包并按其合并说明操作。
 
-## 2. 第一条消息：只初始化
-下面内容在 Codex 交互输入框粘贴，不是在普通 shell 执行：
+## 2. 只初始化
+在 Codex 输入，不是在普通 shell 执行：
 ```text
 $manju-producer
-读取 AGENTS.md、PROJECT.md、STATE.md、HARNESS.md、CAPABILITIES.md 和 config/runtime.json。
-检查 .agents/skills 中的十四个技能是否存在，检查本机 Python/FFmpeg/ffprobe 的可用性。
-只做初始化，不写故事、不生成图片/音频/视频、不安装依赖、不改全局配置、不调用付费接口。
-没有配置的配音、视频、对齐、剪辑软件接口都明确标 unconfigured，不写成已接通。
-不要把 examples 的故事和测试素材当成我的正式项目。
-输出 07_reviews/setup_check_v01.md，同名则递增版本；列出真正能执行的能力和待配置项。
-我稍后再提供小说与配音/剪辑服务选择。
+读取 AGENTS.md、WORKFLOW_ENTRYPOINTS.md、PROJECT.md、STATE.md、CAPABILITIES.md 和 config/runtime.json。
+本轮只检查十四个技能、两个入口提示词和本地工具是否存在，不选择故事、不写稿、不安装依赖、不调用付费接口、不生成或渲染媒体。
+核对 novel_direct 跳过独立编剧、original_script 不要求小说；两条路共用配音与剪辑。
+不把 examples 当正式资料，不用“未提供小说”阻塞原创入口。
+输出初始化报告，重名递增，不覆盖。
 ```
-`/skills` 可用于检查发现到的技能；没有出现时重启 Codex。仍未识别则明确让它读取 `.agents/skills/manju-producer/SKILL.md` 执行本轮检查，不盲目改全局配置。
+若技能名称没有被识别，可要求读取 `.agents/skills/manju-producer/SKILL.md`；不要盲目改全局配置。
 
-## 3. 日后要做配音时
+## 3. 有小说，不想再打磨剧本
 ```text
-$manju-voice
-按已确认剧本给角色做声音定妆卡和逐句任务单。
-先安排两个角色各一小组试音，不批量生成。
-区分可朗读台词、表演指导与字幕文本。
-先确认所用服务、音色许可、要上传的内容、费用上限和输出路径。
-接口未配置就只交任务单和接入清单，不假装生成音频。
+$manju-producer
+读取并执行 prompts/entry_novel_direct.md。
+小说路径：00_source/我的小说.txt
+本次范围：第一章的指定片段（这里填写实际起止）。
+目标：先试做60秒，原文装不下时先提出拆集或延长。
+不另写剧本、不润色对白，先做原文制作依据、逐句台词与文字分镜试拆。
 ```
+完整可填写提示词在该文件中。EPUB 没有现成专用导入器；先检查可读性和实际工具，未读成功就停止原文分析，不凭记忆补全。范围尚未选时只选片段，不拆全书。
 
-## 4. 日后要让 AI 剪视频时
+## 4. 没有小说，用你的设定写剧本
 ```text
-$manju-edit
-读取当前采用镜头表、真实音视频文件、实测配音和素材哈希。
-先检查缺失/失效素材，建立中立 timeline.json，做本地低分辨率粗剪计划。
-不修改原件，不覆盖已有导出；不支持的效果明确列出，不静默忽略。
-先 dry-run，列出输出位置和命令，等我确认后再 --execute。
-不要把中立 timeline.json 说成剪映/Final Cut/Resolve 原生工程。
+$manju-producer
+读取并执行 prompts/entry_original_script.md。
+世界设定：……
+人物描述：……
+故事概述：……
+必须保留：……
+希望先做一集60秒试写。
+不要先写小说，不生图或配音，完成剧本与检查后等我确认。
 ```
+零散输入可以直接在消息里补充，无需编辑系统技能。缺核心方向才问，一次不超过三个问题。
 
-## 5. 你现在不需要装齐全部工具
-文字阶段不要求 FFmpeg。真正剪辑时才需要已安装的 FFmpeg/ffprobe；本包不会自动安装。
-配音与视频的 API 集成尚未实现；先手动生成后导入也能接入时间线。真实工具边界见 CAPABILITIES.md。
+## 5. 两路共用的配音与剪辑
+内容确认后，告诉 voice 读取实际采用的内容依据和台词表：A 的依据是 source_packet，B 是剧本。无需为了 A 的配音另造一份剧本。实际 TTS 接口仍待接入，可先手动生成再导入。
+
+真实图像/音视频就绪后，再交 edit 建中立 timeline、检查与 dry-run；确认后才调用已有 FFmpeg 后端粗剪。没有媒体时不生成黑片冒充成片，不说已经控制剪映/Final Cut/Resolve。
+
+入口和文本都只决定怎样工作，不新增外部调用、安装、渲染或发布授权。能力边界见 CAPABILITIES.md。

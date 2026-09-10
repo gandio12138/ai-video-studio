@@ -1,26 +1,27 @@
 ---
 name: manju-producer
-description: "在用户要初始化、继续制作、检查进度或定位阻塞时使用；按小说直制/原创剧本双入口编排到成片的技能、版本、审批、预算与依赖，不代替各工种且不擅自付费。"
+description: "用于初始化、双入口创作、补视觉、继续制作与恢复；统筹内容、主动补全、人物/场景/逐镜提示词和后期，检查交付覆盖、版本、审批与预算，不擅自生成媒体。"
 ---
-
 # 全流程统筹与恢复
 
-先遵守根目录 AGENTS.md；路径相对项目根目录。
+先读AGENTS.md、PROJECT.md、STATE.md、WORKFLOW_ENTRYPOINTS.md、VISUAL_PRODUCTION.md、CAPABILITIES.md、HARNESS.md和config/runtime.json；只取本轮相关资料，不读全书或未经指定的examples。
 
+## 路由与文字批次
+- novel_direct：story原文事实→source_packet/台词→enrich细节/桥接→visual详细设计↔shots文字镜头→prompts完整正文→audit保真/连续性。跳过独立script润色，缺独立剧本不阻塞。
+- original_script：story简报/人物/大纲→script首集试写/台词→enrich细节/桥接→audit剧情→visual详细设计↔shots试拆→prompts完整正文→audit视觉与接续。缺小说不阻塞，入口已授权draft试写/试拆。
+- 已有内容调用complete_visual_pack时只补缺，保留已确认剧情/台词/素材，不机械重写全部。
+- 未选入口只问入口；小说范围未定先选片段；只初始化不创作。
 
-## 输入
-读 AGENTS.md、PROJECT.md、STATE.md、WORKFLOW_ENTRYPOINTS.md、CAPABILITIES.md、HARNESS.md、config/runtime.json；只读取当前阶段相关产物与任务日志。
-## 入口路由
-先按 WORKFLOW_ENTRYPOINTS.md 读取 entry_mode。novel_direct 调用 story 做事实提取、shots 做试拆、audit 查忠实度，不默认调用 script；source_packet 与逐句台词就是该路 G1 输入。缺独立剧本不是阻塞。
-original_script 从用户设定/人物/概述开始，允许明确授权的一批简报/人物/大纲/试写/审校，缺小说不阻塞；G1 前不自动生产媒体。未选入口时只问入口，不能自动借用旧小说或 examples。
-初始请求已有明确范围就执行该入口批次；没有范围按入口提示词停止在片段候选。已有采用内容时继续当前阶段，不机械重跑。确认 G1 时记录 A/B 对应内容文件与台词版本。
-## 执行
-1. 初始化时运行 `python3 tools/studio.py doctor --root .`（有 Python 时），报告缺项，不安装任何东西；未接通的服务标 unconfigured。
-2. 把用户要求拆成一批有明确终点的工作：输入版本、输出文件、采用的 skill、费用/上传范围、是否需要真实媒体、验收条件。
-3. 按 G1–G5 检查用户确认；不把审校报告当成批准。计划生成、待服务配置、实际执行分开。
-4. 保持关键链：确认台词 → 试音/配音 → 实测 → 有声分镜 → 动态镜头 → 粗剪 → 定剪 → 对齐字幕与混音复核。声音与视觉允许并行。
-5. 变更影响按 contracts/PRODUCTION.md 定位；只让相关 take/字幕/镜头/时间线 stale。缓存复用需输入与输出哈希吻合，不能仅因文件名相同就复用。
-6. 恢复云任务必须先查已提交 ID，超时/未知状态禁止重建任务；没有适配器时给出接入清单或手动导入路线，不假装调用。
-7. 返回下一项最小可执行动作；只有用户要求才继续到下一关。不要在本轮未调用支持工具的情况下承诺后台跑完通知。
+完整v2.2入口首轮包含文字视觉提示词；不是在剧本/镜头表后停下另问“是否需要提示词”。用户只要求局部则按局部。普通A/B补充已获草稿批次许可；C核心提案依入口处理。缺实际参考/模型不阻塞文字，只标条件和未就绪执行。
+
+## 操作
+1. 初始化可运行 `python3 tools/studio.py doctor --root .`，缺工具报告，不自动安装；外部服务未接入如实记unconfigured。
+2. 明确本批输入版本、范围、skill、真实文件交付清单、停止条件与媒体权限。plan下只文本/离线检查。
+3. 覆盖检查按VISUAL_PRODUCTION.md：补全台账、人物/场景/道具详细卡、接续表/镜头、人物五类/场景三类/关键道具/逐镜/两类编辑预案和索引。不能仅列清单代替正文；不能只示例部分却标整包完成。
+4. 记录draft、prompt_only、awaiting_reference和真实资产状态，分开内容/视觉方案批准与媒体执行批准。没实际看到/听到的媒体不宣称验收。
+5. G1内容/台词/叙事补充；G2视觉/衣装/场景/声音身份；先少量试音和定妆小样，再实测配音/关键帧/有声小样，按G3预算进入动态镜头，G4剪辑，G5交付。不得默认全季批量。
+6. 按contracts/PRODUCTION.md追踪变更；CMP→卡→提示词→参考/镜头→时间线，只标真正受影响部分stale。缓存校验输入输出哈希，不仅文件名。
+7. 有外部任务ID先查询或人工核账，未知状态不重复付费；无适配器给接入清单/手动导入，不装作调用成功。没有后台工具不承诺离线跑完通知。
+
 ## 输出
-07_reviews/setup_check_vNN.md 或 run_plan_vNN.md；必要时更新 STATE.md 的草稿/阻塞信息。任务单放 12_runs/jobs；真实用户批准放 approvals。
+07_reviews的初始化/执行报告；本轮实际创作文件；STATE的采用与草稿索引。新版本不覆盖，批准只记录真实消息。最后给已写文件、覆盖缺项、实际检查、未执行媒体与最多三个关键决定。

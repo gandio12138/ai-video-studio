@@ -9,7 +9,7 @@ description: "用于原创剧本创意简报/人物目标/分集大纲，或小�
 先读根目录 AGENTS.md、WORKFLOW_ENTRYPOINTS.md、PROJECT.md、STATE.md，再读用户指定原文或原创想法。参考 templates/story_bible.md、templates/characters.md。不要自动读取 examples。
 
 ## 路线范围
-novel_direct 只提取实际原文的事实、人物、场景、因果和已知信息，交 source_packet/台词与 shots；不另造创作性大纲，不默认列新增反转或对白，输出 EP01_source_facts_vNN.md。下面涉及原创或改编创作提案的步骤不适用于此路线，除非用户另行批准改变范围。
+novel_direct在事实表只提取实际原文的人物、场景、因果和已知信息，输出EP01_source_facts_vNN.md并交source_packet/台词。原文未写的服饰、场景、表演和局部桥接交manju-enrich，按VISUAL_PRODUCTION.md以CMP制作补充主动设计，不把它们写成原文。不得另造反转或对白；核心改编提案按单独批准处理。
 original_script 从用户想法直接发展剧本，不要求小说。用户已经提供方向则不重复选题；批次已明确包含试写时，大纲 draft 可以交给 script 试写，不要误报阻塞。
 ## 步骤
 1. 确认原创或改编入口。无原稿、无想法时先问入口、题材/受众、试作时长；不要自称分析了尚不存在的小说。
@@ -28,4 +28,4 @@ original_script 从用户想法直接发展剧本，不要求小说。用户已�
 主角是否有可观察目标、主动行动与失败代价？冲突与结局是否有因果？反转是否有可见铺垫？新增设定是否清楚标注？是否真实遵守读取范围与制作限制？
 
 ## v2 生产交接
-下游按入口走 source_packet/分镜试拆或原创剧本/审校，不跳到全片生成；变更人物目标需列受影响的剧本/镜头/声音方向。
+下游按入口走source_packet或原创剧本，然后enrich/visual/shots/prompts完整文字包；草稿可以交接，不跳到实际生成。原创新事件在用户方向内可提案试写，既定核心变化列影响。

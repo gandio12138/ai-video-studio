@@ -1,0 +1,1644 @@
+{
+  "package": "ai-manju-studio",
+  "version": "2.2",
+  "date": "2026-09-10",
+  "checks": [
+    {
+      "check": "15_skill_files",
+      "passed": true
+    },
+    {
+      "check": "preserve_original_14_skills",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-audit",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-delivery",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-edit",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-enrich",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-images",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-producer",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-prompts",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-script",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-shots",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-sound",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-story",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-subtitles",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-video",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-visual",
+      "passed": true
+    },
+    {
+      "check": "skill_frontmatter:manju-voice",
+      "passed": true
+    },
+    {
+      "check": "entry_uses_visual_standard:prompts/entry_novel_direct.md",
+      "passed": true
+    },
+    {
+      "check": "entry_requires_prompt_text:prompts/entry_novel_direct.md",
+      "passed": true
+    },
+    {
+      "check": "entry_uses_visual_standard:prompts/entry_original_script.md",
+      "passed": true
+    },
+    {
+      "check": "entry_requires_prompt_text:prompts/entry_original_script.md",
+      "passed": true
+    },
+    {
+      "check": "entry_uses_visual_standard:prompts/complete_visual_pack.md",
+      "passed": true
+    },
+    {
+      "check": "entry_requires_prompt_text:prompts/complete_visual_pack.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:VISUAL_PRODUCTION.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:templates/character_design.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:templates/scene_design.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:templates/completion_ledger.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:templates/continuity_sheet.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:templates/visual_pack_index.md",
+      "passed": true
+    },
+    {
+      "check": "required_file:examples/visual_completion/worked_example.md",
+      "passed": true
+    },
+    {
+      "check": "existing_JSON_files_parse",
+      "passed": true
+    },
+    {
+      "check": "unchanged_backend_or_configuration:tools/harness_core.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged_backend_or_configuration:tools/README.md",
+      "passed": true
+    },
+    {
+      "check": "unchanged_backend_or_configuration:tools/studio.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged_backend_or_configuration:tools/render_preview.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged_backend_or_configuration:tools/smoke_test.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged_backend_or_configuration:tools/check_shots.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged_backend_or_configuration:config/runtime.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged_backend_or_configuration:config/delivery.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged_backend_or_configuration:config/providers.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged_data_contract:templates/job.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged_data_contract:templates/timeline.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged_data_contract:templates/shotlist.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged_data_contract:templates/line_alignment.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged_data_contract:templates/tts_job.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged_data_contract:templates/line_sheet.json",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:VALIDATION.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:VALIDATION.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:VALIDATION.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:VALIDATION.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:HARNESS.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:HARNESS.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:HARNESS.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:HARNESS.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:WORKFLOW_ENTRYPOINTS.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:WORKFLOW_ENTRYPOINTS.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:WORKFLOW_ENTRYPOINTS.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:WORKFLOW_ENTRYPOINTS.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:STATE.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:STATE.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:STATE.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:STATE.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:AGENTS.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:AGENTS.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:AGENTS.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:AGENTS.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CAPABILITIES.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CAPABILITIES.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CAPABILITIES.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CAPABILITIES.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:PROMPT_LIBRARY.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:PROMPT_LIBRARY.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:PROMPT_LIBRARY.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:PROMPT_LIBRARY.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CHATGPT_PROJECT_INSTRUCTIONS.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CHATGPT_PROJECT_INSTRUCTIONS.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CHATGPT_PROJECT_INSTRUCTIONS.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CHATGPT_PROJECT_INSTRUCTIONS.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CHANGELOG.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CHANGELOG.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CHANGELOG.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:CHANGELOG.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:PROJECT.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:PROJECT.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:PROJECT.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:PROJECT.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:VISUAL_PRODUCTION.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:VISUAL_PRODUCTION.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:VISUAL_PRODUCTION.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:VISUAL_PRODUCTION.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:START_HERE.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:START_HERE.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:START_HERE.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:START_HERE.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:MIGRATION.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:MIGRATION.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:MIGRATION.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:MIGRATION.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:SOURCES.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:SOURCES.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:SOURCES.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:SOURCES.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:01_story/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:01_story/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:01_story/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:01_story/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:contracts/PRODUCTION.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:contracts/PRODUCTION.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:contracts/PRODUCTION.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:contracts/PRODUCTION.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:03_shots/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:03_shots/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:03_shots/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:03_shots/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/complete_visual_pack.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/complete_visual_pack.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/complete_visual_pack.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/complete_visual_pack.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/entry_original_script.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/entry_original_script.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/entry_original_script.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/entry_original_script.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/entry_novel_direct.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/entry_novel_direct.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/entry_novel_direct.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:prompts/entry_novel_direct.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:04_visual/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:04_visual/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:04_visual/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:04_visual/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:05_prompts/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:05_prompts/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:05_prompts/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:05_prompts/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:tools/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:tools/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:tools/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:tools/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:02_scripts/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:02_scripts/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:02_scripts/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:02_scripts/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/completion_ledger.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/completion_ledger.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/completion_ledger.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/completion_ledger.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/run_report.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/run_report.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/run_report.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/run_report.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/delivery_report.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/delivery_report.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/delivery_report.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/delivery_report.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/review.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/review.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/review.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/review.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/scene_design.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/scene_design.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/scene_design.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/scene_design.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/character_design.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/character_design.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/character_design.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/character_design.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/continuity_sheet.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/continuity_sheet.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/continuity_sheet.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/continuity_sheet.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/source_packet.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/source_packet.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/source_packet.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/source_packet.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/prompt_job.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/prompt_job.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/prompt_job.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/prompt_job.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/visual_bible.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/visual_bible.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/visual_bible.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/visual_bible.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/story_bible.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/story_bible.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/story_bible.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/story_bible.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/script.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/script.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/script.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/script.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/visual_pack_index.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/visual_pack_index.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/visual_pack_index.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/visual_pack_index.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/characters.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/characters.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/characters.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/characters.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/shot_fields.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/shot_fields.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/shot_fields.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:templates/shot_fields.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:00_source/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:00_source/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:00_source/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:00_source/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:00_source/RIGHTS.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:00_source/RIGHTS.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:00_source/RIGHTS.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:00_source/RIGHTS.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:07_reviews/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:07_reviews/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:07_reviews/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:07_reviews/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/logs/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/logs/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/logs/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/logs/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/approvals/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/approvals/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/approvals/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/approvals/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/jobs/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/jobs/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/jobs/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/jobs/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/lineage/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/lineage/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/lineage/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:12_runs/lineage/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/licenses/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/licenses/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/licenses/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/licenses/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/alignment/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/alignment/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/alignment/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/alignment/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/lines/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/lines/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/lines/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/lines/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/takes/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/takes/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/takes/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/takes/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/voices/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/voices/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/voices/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/voices/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/mix/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/mix/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/mix/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:08_audio/mix/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:10_edit/proxies/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:10_edit/proxies/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:10_edit/proxies/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:10_edit/proxies/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:10_edit/timelines/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:10_edit/timelines/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:10_edit/timelines/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:10_edit/timelines/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:11_exports/delivery/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:11_exports/delivery/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:11_exports/delivery/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:11_exports/delivery/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:11_exports/previews/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:11_exports/previews/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:11_exports/previews/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:11_exports/previews/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/worked_example.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/worked_example.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/worked_example.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/worked_example.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/source.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/source.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/source.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/visual_completion/source.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/production_plan/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/production_plan/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/production_plan/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/production_plan/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/production_plan/edit_brief.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/production_plan/edit_brief.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/production_plan/edit_brief.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/production_plan/edit_brief.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/review.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/review.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/review.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/review.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/visual_bible.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/visual_bible.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/visual_bible.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/visual_bible.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/story_bible.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/story_bible.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/story_bible.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/story_bible.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/shots.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/shots.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/shots.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/shots.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/script.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/script.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/script.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/script.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/prompts.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/prompts.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/prompts.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/prompts.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/source.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/source.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/source.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:examples/watch_note/source.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:06_assets/generated/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:06_assets/generated/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:06_assets/generated/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:06_assets/generated/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:06_assets/references/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:06_assets/references/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:06_assets/references/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:06_assets/references/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:09_video/jobs/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:09_video/jobs/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:09_video/jobs/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:09_video/jobs/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:09_video/clips/README.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:09_video/clips/README.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:09_video/clips/README.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:09_video/clips/README.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-enrich/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-enrich/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-enrich/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-enrich/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-voice/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-voice/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-voice/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-voice/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-edit/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-edit/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-edit/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-edit/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-audit/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-audit/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-audit/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-audit/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-images/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-images/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-images/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-images/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-story/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-story/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-story/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-story/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-subtitles/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-subtitles/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-subtitles/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-subtitles/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-sound/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-sound/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-sound/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-sound/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-video/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-video/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-video/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-video/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-delivery/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-delivery/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-delivery/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-delivery/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-producer/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-producer/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-producer/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-producer/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-prompts/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-prompts/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-prompts/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-prompts/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-shots/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-shots/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-shots/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-shots/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-script/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-script/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-script/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-script/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-visual/SKILL.md:不另写桥段",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-visual/SKILL.md:B 首轮默认在剧本审校后停止",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-visual/SKILL.md:B 定稿后拆",
+      "passed": true
+    },
+    {
+      "check": "no_obsolete_rule:.agents/skills/manju-visual/SKILL.md:本轮不写长篇小说、不展开全季、不拆正式镜头表",
+      "passed": true
+    }
+  ],
+  "passed_count": 406,
+  "skill_count": 15,
+  "checks_scope": "file presence, selected routing requirements, skill metadata, JSON parse, unchanged executable tools/config/contracts, selected obsolete-rule scan",
+  "does_not_validate": [
+    "aesthetic quality",
+    "source fidelity",
+    "actual Codex loading/execution",
+    "image model output",
+    "voice/video generation",
+    "macOS end-to-end"
+  ],
+  "external_generation_calls": 0,
+  "new_media_adapters": 0
+}

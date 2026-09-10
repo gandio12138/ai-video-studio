@@ -68,3 +68,7 @@ assets.json 顶层为 `schema_version` 和 `assets` 列表。每项必填 `asset
 `source_refs` 在 A 引用原文与 source_packet，在 B 引用剧本节拍，不强制 02_scripts/EP01_vNN.md 存在。
 对白对象可追加 `line_id`，旁白对应 `voiceover_line_ids` 列表；跨镜声音在 post_notes 写覆盖关系。逐句文本唯一采用源是 EP01_lines_vNN.json，镜头只引用同版内容。
 原 v1 校验器仍只检查原有字段及逐镜时长粗估，不验证新台词引用、原文忠实度或跨镜去重；这些由 agent/audit 和人工核对。本次没有声称新增字段已获程序级校验。
+
+## v2.2 视觉与补充交接（非新增程序校验）
+source_refs可引用原文/source_packet/原创剧本以及补全台账CMP。可另加completion_refs、wardrobe_versions、visual_prompt_refs用于agent追踪；它们不是生成服务参数，原check_shots未增加对此的完整验证。
+每镜需要完整关键帧提示词文件，正文不能用资产编号替代外观。动作/持物/视线/衣装湿破状态与接续表一致，B桥接计入时长；G1前在两个入口明示许可下均可draft试拆。

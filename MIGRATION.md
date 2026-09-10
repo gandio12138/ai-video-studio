@@ -1,22 +1,11 @@
-# 升级到 v2.1：保留已有故事与进度
+# 升级到v2.2：保留已有作品，只合并规则与新模板
 
-## 尚未开始正式创作
-另解压 v2.1 完整包，在新目录启动，保留旧目录作备份。不要解压覆盖旧项目。
+新项目可以用完整包；已有作品使用ai-manju-v2.2-update更新包，让Codex先读APPLY_WITH_CODEX.md，比较并提出合并计划，用户确认后再改。
 
-## 正在用 v2 harness
-使用独立 `ai-manju-v2.1-update` 更新包。它将新增文件和参考改稿放在分开的子目录，不是直接覆盖补丁。把整个更新包文件夹放到旧项目根目录，先让 Codex 读取其中的 APPLY_WITH_CODEX.md，按清单提议差异；确认后再合并。
+不得用新PROJECT.md/STATE.md初始化内容覆盖真实状态，不覆盖00_source、剧本、分镜、assets.json、媒体、.env、provider/runtime/delivery配置或批准记录。MERGE_ONLY中的两份文件仅提供新增设置/进度行示例；保留原值，只添加缺少字段。
 
-必须新增：WORKFLOW_ENTRYPOINTS.md、prompts 两个入口、templates/source_packet.md、templates/line_sheet.json。
-必须合并：AGENTS.md 与 producer 的路由，story/script/audit/shots/visual/voice 的输入条件。删除或替换旧“所有内容必须先写独立剧本”的冲突，不只在末尾堆新规则。
-PROJECT.md / STATE.md 保留你真实的项目名、原文路径、创意、确认版本和进度，只新增入口/内容依据/台词字段；无用户依据不得把任何状态改成 approved 或 completed。
+重点合并：AGENTS/WORKFLOW_ENTRYPOINTS/VISUAL_PRODUCTION、producer/enrich/story/script/audit/shots/visual/prompts、两个完整入口和complete_visual_pack、详细模板。改掉旧“A不允许任何桥接”“B首轮剧本后必须停”“视觉缺细节全等确认”“只接受已确认视觉才写提示词”等冲突，不保留互相打架的规则。
 
-旧的未指定“原创”值可能表示原创小说，也可能表示原创剧本，不能自动猜；只有新用户要求明确时设置对应 entry_mode。切换不同故事建议新目录，禁止默默混入人物与旧小说。
+不改变原工具后端和严格JSON契约；新补全/视觉字段是文字工作约定。保留已有主角色/场景/声音与剧情批准，新草案不能自动替换。当前项目已到后期也不要重跑前期，只对指定缺口补稿。
 
-不覆盖 00_source–12_runs 内的正式文件、实际资产表、所有媒体、config 密钥/预算/许可与批准日志。不复制 examples 到正式目录。不运行任何媒体工具。
-
-完整包包含用于新项目的 PROJECT/STATE 初始化模板，**不是已有项目迁移后的真实状态**。
-
-## 验证
-核对两个入口都能被当前项目指令找到：A 缺独立剧本不阻塞，B 缺小说不阻塞；十四个技能仍在。源文件/媒体/用户确认记录未改。Python 可用时重跑现有单元测试；测试通过不代表 Codex 的自然语言路由已做端到端验证。
-
-旧 v1→v2 迁移说明保留在 docs/archive/MIGRATION_v1_v2.md。本次不更改媒体后端与运行时默认权限。
+核对十五个技能、三个入口文件和共同规范存在；检查当前两路完整批次都有视觉交付、A/B草稿补全、C核心边界、参考条件与无媒体默认权限。最后报告实际改动/冲突和未改文件。示例不得自动当作用户故事。

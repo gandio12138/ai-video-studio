@@ -6,7 +6,7 @@ description: "用于把小说原文制作依据或原创剧本拆成可制作的
 # 文字分镜与镜头表
 
 ## 输入
-读 AGENTS.md、WORKFLOW_ENTRYPOINTS.md、PROJECT.md、STATE.md。novel_direct 读本轮 source_packet、事实表、原文定位与逐句台词，不要求独立剧本；original_script 读采用剧本和逐句台词。读 templates/shot_fields.md、templates/shotlist.json、04_visual/assets.json 及已有视觉设定。无 G1 内容确认时只在用户明确授权下试拆；入口 A 的首轮提示词已包含此授权，输出必须 draft。
+读 AGENTS.md、WORKFLOW_ENTRYPOINTS.md、PROJECT.md、STATE.md。novel_direct 读本轮 source_packet、事实表、原文定位与逐句台词，不要求独立剧本；original_script 读采用剧本和逐句台词。读 templates/shot_fields.md、templates/shotlist.json、04_visual/assets.json 及已有视觉设定。无G1确认时仅按明确授权试拆；v2.2两个入口均含当前集文字试拆授权，输出必须draft。另读VISUAL_PRODUCTION.md、本轮CMP补全台账与详细视觉卡，不能每镜另造造型。
 
 ## 步骤
 1. 先列本集信息节拍，再决定镜头。一个镜头承担一个主要叙事任务，非必要不为凑数拆镜。
@@ -20,11 +20,11 @@ description: "用于把小说原文制作依据或原创剧本拆成可制作的
 
 ## 输出
 03_shots/EP01_shots_v01.json、EP01_shots_v01.md、素材需求摘要；必要时仅新增 04_visual/assets.json 计划条目。宽表可以拆成“镜头创意表”和“声音/素材表”，以镜号关联，不能丢字段。
-镜头状态仍为 draft，随后交 manju-audit 复核，再制作视觉设定。
+镜头状态仍为draft，交audit复核；与visual/enrich局部回查后必须交prompts输出本轮每镜独立关键帧提示词，不以镜头表已完成代替视觉提示词已完成。
 
 ## v2 生产交接
 此表是创意/计划层，不等于剪辑时间线。对白可增加 line_id 字段，跨镜音轨在独立 timeline 仅放一次；后续 manju-voice 实测后再修订帧时长。保留原 v1 字段兼容 check_shots。
 
 ## v2.1 保真与台词交接
-A 路线不改选中对白、不另写桥段；必要改动先列提案。每个 dialogue 对象带 line_id，旁白在 voiceover_line_ids 和 post_notes 中关联台词表，跨镜覆盖清楚标记。原有 check_shots 对新增关联字段不做完整校验，另人工核对引用及重复计时，不夸称其已验证。
-source_refs 可同时引用原文及 source_packet；B 引用确认剧本。原文没写的拍法是制作提案，不是小说事实。镜头时间不够时先提出延长/拆镜/拆集，不擅自删台词或把缺失剧本当阻塞。
+A路线不改选中对白；允许按VISUAL_PRODUCTION.md把已登记A/B制作补充写入草稿动作/镜头，连接原文既有起止状态，不得偷加C核心事件。补充动作和新增镜头计入总时长，已确认镜头变更先列影响。每个 dialogue 对象带 line_id，旁白在 voiceover_line_ids 和 post_notes 中关联台词表，跨镜覆盖清楚标记。原有 check_shots 对新增关联字段不做完整校验，另人工核对引用及重复计时，不夸称其已验证。
+source_refs可同时引用原文/source_packet与补全台账CMP；B引用采用剧本或明确授权草稿。可追加completion_refs、wardrobe_versions、visual_prompt_refs等交接信息，但原check_shots不验证这些扩展。原文没写的拍法/动作是制作补充，不是小说事实。镜头时间不够时先提出延长/拆镜/拆集，不擅自删台词或把缺失剧本当阻塞。

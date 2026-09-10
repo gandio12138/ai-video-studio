@@ -56,6 +56,6 @@ test_stream_duration_not_container (test_harness_v2.HarnessChecks.test_stream_du
 test_valid_timeline (test_harness_v2.HarnessChecks.test_valid_timeline) ... ok
 
 ----------------------------------------------------------------------
-Ran 56 tests in 0.020s
+Ran 56 tests in 0.017s
 
 OK

@@ -62,3 +62,7 @@ validate 检查格式与部分状态，不是通用 JSON Schema 引擎；不验�
 A 的对白/旁白选自实际原文，source_refs 可追溯；改词不再属于 source_exact，需单独批准并记录。B 的创作提案标 ai_proposal/user_given，不虚构原文出处。旁白沿用稳定台词 ID，并登记声音角色，不能因此往画面增加出镜人物。
 沿用 tts_job.script_ref 字段名避免破坏 v2 任务模板；A 可指 source_packet，B 指剧本。Job.input_refs 还需记录采用台词表、声音卡与必要参考哈希。当前工具并不自动验证 line_sheet 与剧本/原文的语义一致性，需审校与人工确认。
 本次不改变 timeline/job/alignment 的 schema_version=2.0，也不改变原 shotlist 的 schema_version=1.0；模板包版本号与不同数据契约版本不要混为一谈。
+
+## v2.2 文字视觉包交接
+VISUAL_PRODUCTION.md定义CMP补全、详细资产卡、提示词正文和覆盖索引。均为agent文字协作协议，不改变job/timeline/alignment的严格字段与schema版本。source_packet允许A/B制作补充，原句来源标签仍准确；新台词需相应许可，不能误标source_exact。
+修改CMP时追踪相关卡、提示词、参考图/镜头与时间线；只变服装细节不必自动重做配音，影响动作/台词/镜长时再核对声音与字幕。prompt_only/awaiting_reference是文字工作状态，不是job已执行状态。

@@ -1,0 +1,86 @@
+角色：C001；服装：V02；本项目采用十五岁阶段少年萧炎。
+状态：设定总图候选，供审核、分享和后续视频参考；不自动定稿或永久锁定身份。
+唯一上传参考：/Users/chengchengxu/Desktop/aiVideo/images/C001_V02_FRONT.png
+未使用第二张胸像参考，也未索要侧面或背面参考。
+输出：C001_V02_CHARACTER_SHEET.png
+方式：内置 image_gen，以原图生成1:1总图，再局部调整中行第4、5表情。
+输出尺寸：1254 x 1254。
+版式：顶行约49%四全身，中行约21%五表情，底行约30%；底行左约61%三角度脸，右约39%四细节框，符合用户近似比例。
+候选边界：背面未展示结构采用最小补全；戒指微小纹理仅低调补全。参考图戒指确定在右手，具体指位视觉最接近中指，原全身图分辨率对精确指位判断有一定限制，细节格保持右手中指解读，仍需用户审核。
+原始正面图保留，未覆盖。
+
+完整总图生成提示词
+Use case: identity-preserve.
+Create ONE square photographic character reference sheet from the supplied image. Image 1 is the ONLY reference and is the identity, hairstyle, body, V02 costume and ring authority. NO second reference is available or needed. All panels depict the SAME specific boy at age fifteen. This is a clean costume/character approval sheet, not a group portrait or story poster. Prefer a high-resolution 2880 x 2880 square image with clearly readable small details.
+
+LAYOUT IS MANDATORY — ONE 1:1 SQUARE, THREE HORIZONTAL ROWS:
+Top row: exactly about 50% of total height, 4 equal-width full-body panels, left to right:
+"01 FRONT" | "02 RIGHT SIDE" | "03 BACK" | "04 CHAPTER POSE"
+Middle row: about 22% total height, one header "05 EXPRESSIONS", with exactly FIVE evenly spaced, SAME-SCALE face/upper-shoulder portraits in one horizontal row.
+Bottom row: about 28% total height, header "06 FACE / DETAILS". Left 60% of this row contains THREE same-scale neutral head portraits in a row: frontal, 45-degree view showing the character's own right face, right profile looking toward image-right. Right 40% of this row is a 2x2 detail grid: "EYES" upper left, "LIPS" upper right, "HAIR / BANGS" lower left, "RING / RIGHT HAND" lower right.
+Thin neutral-gray dividers and light-gray seamless studio backgrounds, generous but efficient spacing. The entire sheet has exactly these three rows with these proportions; NOT a 3x3 grid. Do not exchange regions. Modest readable dark-gray English typography only. The quoted panel headings above are the ONLY permitted text; no Chinese, names, C001/V02 extra titles, expression subtitles, extra numbers, prose, logos, borders, watermarks or slogans. Do not let text overlap faces or shoes.
+
+IDENTITY AND PHOTOGRAPHIC STYLE:
+Every view must clearly be the same fifteen-year-old boy as Image 1, with his particular face width, eye spacing/shape, eyelids, eyebrows, nose bridge/tip, lip shape/thickness, hairline, jaw and natural skin tone. Preserve the reference's delicate adolescent beauty and fairly defined but narrow jaw, neither a mature muscular adult nor a small child. Eyes dark black-brown; natural skin and lip color. Do not enlarge eyes, sharpen chin, lift nose, add makeup, or substitute a generic idol face. Retain realistic skin detail, dimensional hair masses and individual flyaways, woven cloth weight, plausible shadows, and the original Eastern fantasy live-action costume-photography style. NOT Japanese fantasy anime, cel shading, line art, game UI, plastic figures or wax skin.
+
+STANDARD FRONT HEAD CORRECTION:
+The reference has a slight head tilt/turn. For 01 FRONT, all five middle expressions, and the bottom frontal head, correct only HEAD ORIENTATION to a natural upright straight-on face. The camera faces the boy at approximately eye level, eye line roughly horizontal, no tilted head or raised chin. Nose bridge, philtrum, chin center relate naturally in frontal perspective. Preserve small real left-right asymmetries and ORIGINAL facial dimensions; do not mirror half a face, rotate the entire image, horizontally flip the reference, or force pixel symmetry. Only gently move a few eye-covering stray hairs without changing the established hairstyle.
+
+FIXED HAIR:
+Same black hair in every panel: upper portion half tied into the original small high bun, with the rest of the long hair hanging naturally down. Same hairline, parting, irregular forehead bangs, tied position and major lock directions in all views. Keep the distinctive long lock down the character's own right chest as visible in the reference. Rear hair length must be compatible with the frontal long locks, reaching approximately mid-back/waist region as appropriate to the actual reference, never suddenly cropped short or extended to ankles. No new headpiece, crown, beads, decorative hairband or hair ornaments.
+
+FIXED V02 CLOTHING — REPLICATE REFERENCE, DO NOT UPGRADE:
+Clean, intact, charcoal-black long outer robe with the original wide long sleeves, overlapping front panels and front slit, hem near mid-calf. Deep teal-gray crossed collar with the same widths, layering and overlap direction as reference, narrow light-gray inner collar. Dark fabric waist wrap with the original knot and TWO unequal-length hanging tails. Knot and both tails remain on the character's OWN LEFT FRONT WAIST, which is IMAGE-RIGHT in the frontal view. Translate spatial position correctly in side and rear views; never add a back bow or put tails behind the body. Deep-gray trousers; black closed-toe soft cloth boots with the original layered wrapped shafts. Original proportions, fabric color and thickness. Woven texture and sensible shoulder/elbow/waist folds, not random all-over microcrumpling. He is a clan leader's son in a setback period, not a beggar, not an armored champion. No holes, fraying, patches, stains, brocade upgrade, armor, cloak, pauldrons, emblems, pendant, forehead ornament, sword, huge ruler weapon, flame motifs, metal boot buckles or knee armor.
+
+THE SINGLE BLACK ANCIENT RING — IMPORTANT CONTINUITY:
+Exactly one simple aged black ring, on the character's OWN RIGHT HAND, on the EXACT SAME FINGER as visibly wearing it in Image 1. Copy the reference finger position relative to thumb and neighboring fingers, the moderate band width and simple silhouette; do not move to a different finger. In front views the right hand is on IMAGE-LEFT. In back views the right hand is on IMAGE-RIGHT. In the right-side view follow true occlusion, do not force a hidden ring into view. In the hand detail it must still be WORN on that same right hand and same finger, not floating or removed. Slight subdued surface reflection and continuous modest worn texture only, no gemstones, skulls, dragons, invented symbolic runes, glow or enlarged thumb-ring shape. No duplicate ring. Do not depict ring powers or a spirit.
+
+TOP FOUR PANELS:
+01 FRONT: full body from highest bun to complete soles, head upright facing straight at camera, neutral expression, shoulders relaxed, arms naturally down, complete hands with simple relaxed fingers. Preserve collar overlap, own-left waist knot IMAGE-RIGHT, and own-right ring IMAGE-LEFT.
+02 RIGHT SIDE: genuine complete body RIGHT-SIDE view, nose points toward IMAGE-RIGHT. Not a squeezed frontal figure, not a mirror shortcut. Show the natural forehead-nose-lips-chin profile, small bun and hanging hair, robe thickness, sleeves, waist wrap and wrapped boots. Same body scale and clothing dimensions as 01, arms natural with true occlusion. Keep knot/tails on the true left-front side even if partly hidden.
+03 BACK: full body exactly from behind, no face looking back. Same half-tied bun rear structure, compatible length of loose black hair, simple clean robe back panels/seams, waist band running flat across back, boot backs. Ring remains on the own-right hand IMAGE-RIGHT if visible. No rear bow, back emblem, embroidery, attached weapon or extra accessory. Unseen back construction is only a minimal plausible candidate completion.
+01,02,03 must share roughly aligned highest-head and sole baselines and identical body proportions.
+04 CHAPTER POSE: same boy and same outfit in a restrained emotional standing pose against plain background. Body almost upright, head slightly lowered; OWN RIGHT HAND forms a relaxed restrained fist at the waist on IMAGE-LEFT; other arm hangs naturally down. Subdued self-mockery and wounded restraint, no exaggerated anger, blood, clenched-teeth rage, power charging, aggressive action or change of outfit. Full body and shoes complete. No stele, crowd, arena, dialogue or motion streaks.
+
+MIDDLE — EXACTLY FIVE EXPRESSIONS:
+Same magnification, approximately upright straight-on head angle, same bone structure, eyes spacing, hairline, nose, jaw size, age, hair and collar in all FIVE portraits. Different expressions are subtle changes of brows, lips and facial muscles, not different camera angles or new faces. From left to right:
+1 neutral: natural gaze and softly closed lips, no glare;
+2 restrained self-mockery: tiniest uneven lip-corner movement, eyes do not truly smile, no smirk exaggeration;
+3 restrained response to humiliation: slight tightening between brows and at lips, no shouting or teeth;
+4 dejection: gaze a little lowered and mouth relaxed, head still nearly upright, natural neck, no crying;
+5 briefly softened by care: gentler eyes and minimal warm lip-corner change, not triumphant or newly confident.
+Do not write these expression descriptions as captions. Do not add tears, injuries, red eyes, facial hair, makeup or jewelry.
+
+BOTTOM LEFT THREE FACES:
+Three neutral-expression head closeups, forehead/hairline/chin fully legible. First is the standard front face preserving individual reference features. Second shows OWN RIGHT cheek at about 45 degrees, looking toward IMAGE-RIGHT. Third is true OWN RIGHT profile, nose toward IMAGE-RIGHT. They explain the same skull, eye sockets, nose bridge/tip, lips and chin projecting naturally in 3D, never three newly invented faces. Cropping bodies is correct here, but do not crop key facial features.
+
+BOTTOM RIGHT 2x2 DETAILS:
+EYES: both eyes, eyebrows and nasal root of this same boy; dark black-brown irises, actual natural eyelids, no special pupil pattern or eyeliner.
+LIPS: naturally closed original lips, philtrum and small amount of surrounding skin; youthful natural lip thickness, no glossy makeup.
+HAIR / BANGS: existing hairline, irregular forehead locks and their relationship to the half-tied bun above, same hair design, distinguish main locks from fine strands.
+RING / RIGHT HAND: a close photographic view of the SAME right hand wearing its ring on the reference finger, include dorsal hand and needed knuckles/fingers and wrist continuing naturally into the sleeve/crop. Make band placement readable; no extra finger, no severed limb, no isolated jewelry product shot. Fine details not readable in reference remain understated continuous candidate texture with no symbols.
+
+Global check: all repeated people are the SAME C001 wearing V02. Correct anatomical left/right continuity everywhere; no mirrored waist knot or ring swap. Each full-body panel contains one complete person, no overlap/duplicate limbs/floating objects. Same neutral studio material and soft lighting system, allowing lighting to follow true view angle. No story environment, time progression, battle, transformation or later equipment. Identity and structure accuracy are more important than decorative design. Output only this ONE square candidate character sheet.
+
+表情局部修正提示词
+Precise localized edit of this square photographic character reference sheet. Modify ONLY the FOURTH and FIFTH face portraits in the MIDDLE ROW labeled "05 EXPRESSIONS". Preserve all other panels, all typography, borders/dividers, layout dimensions, every full-body view, the three bottom faces and all four detail crops exactly as they are. Do NOT change the first, second or third middle-row faces. Same specific fifteen-year-old boy, same facial proportions and V02 collar.
+
+MIDDLE ROW FOURTH PORTRAIT (second from the right): It currently lowers the whole head too far. Correct ONLY the head orientation to a natural upright front-facing portrait, matching the head height, scale, eye-level camera and near-horizontal eye line of the first/third expressions. Keep the SAME original bone structure, face width, jaw, nose shape, eye spacing, skin, hairline, bun and bangs; do not mirror or symmetrize the face. The emotion remains dejection: the EYES may glance SLIGHTLY downward, lips relaxed and naturally closed, no smile or crying, natural neck and shoulders. The gaze lowering is small and emotional; the HEAD itself stays upright, not bowed or tilted, chin not tucked. Keep the same adolescent facial identity.
+
+MIDDLE ROW FIFTH PORTRAIT (far right): It is too indistinguishable from the neutral first portrait. Keep the head upright and same face anatomy and identity, but make the gaze gently softer in response to care: relax the tension around the eyes and subtly soften the brows, with the very smallest warm upturn at the corners of the naturally closed lips. A quiet brief softening, NOT a broad smile, triumphant grin, raised chin, confident smirk or new personality. No showing teeth, no blushing or makeup.
+
+Keep all five middle portraits at the same scale and centered head placement. Do not change their costume/collar or hairstyle. Preserve the neutral realistic studio style and light-gray backgrounds, lighting continuity and original square canvas.
+Everywhere else must remain unchanged, especially own-left-front waist knot and tails, the single ring on the same finger of the right hand, full-body silhouettes, face closeups and the hand detail.
+Do not add text. All existing labels must remain exact:
+01 FRONT
+02 RIGHT SIDE
+03 BACK
+04 CHAPTER POSE
+05 EXPRESSIONS
+06 FACE / DETAILS
+EYES
+LIPS
+HAIR / BANGS
+RING / RIGHT HAND
+Output the ONE complete square sheet with only the two specified facial-expression edits.
+

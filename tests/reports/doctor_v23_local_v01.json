@@ -1,0 +1,45 @@
+{
+  "python": "3.14.5",
+  "python_minimum": "3.9",
+  "platform": "macOS-26.6.2-x86_64-i386-64bit-Mach-O",
+  "skill_count": 15,
+  "skills": [
+    "manju-audit",
+    "manju-delivery",
+    "manju-edit",
+    "manju-enrich",
+    "manju-images",
+    "manju-producer",
+    "manju-prompts",
+    "manju-script",
+    "manju-shots",
+    "manju-sound",
+    "manju-story",
+    "manju-subtitles",
+    "manju-video",
+    "manju-visual",
+    "manju-voice"
+  ],
+  "required_project_files": {
+    "AGENTS.md": true,
+    "STATE.md": true,
+    "PROJECT.md": true,
+    "CAPABILITIES.md": true,
+    "config/runtime.json": true,
+    "config/providers.json": true
+  },
+  "binaries": {
+    "ffmpeg": "/usr/local/bin/ffmpeg",
+    "ffprobe": "/usr/local/bin/ffprobe"
+  },
+  "versions": {
+    "ffmpeg": "ffmpeg version 8.1.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.1 Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "local_preview_dependencies_ready": true,
+  "local_preview_blocker": "",
+  "cloud_adapters_implemented": false,
+  "network_calls_made": false,
+  "installed_anything": false,
+  "note": "这不是你的生产权限批准，也没有验证 Codex 已加载 skill。"
+}

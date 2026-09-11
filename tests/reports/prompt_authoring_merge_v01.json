@@ -1,0 +1,241 @@
+{
+  "task": "prompt_authoring_standard_harness_merge",
+  "version": "v01",
+  "checked_at": "2026-09-11T15:36:54.668515+08:00",
+  "status": "passed_document_checks_with_validator_dependency_limitation",
+  "structural_checks": {
+    "modified_count": 33,
+    "preserved_count": 334,
+    "all_modified_files_reference_standard": true,
+    "unique_agents_block": true,
+    "sample_integrity": true,
+    "c001_preset_verbatim": true,
+    "skills_frontmatter_unchanged_count": 15,
+    "fences_balanced": true,
+    "protected_files_unchanged": true
+  },
+  "existing_tests": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_cinematic_look.py",
+      "tests": 7,
+      "exit_code": 0,
+      "result": "OK"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_design_sheets_v23.py",
+      "tests": 14,
+      "exit_code": 0,
+      "result": "OK"
+    }
+  ],
+  "skill_validator": {
+    "command": "python3 /Users/chengchengxu/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/manju-prompts",
+    "result": "unavailable",
+    "exit_code": 1,
+    "error": "ModuleNotFoundError: No module named 'yaml'",
+    "fallback": "stdlib名称/描述/命名长度/未完成占位检查；15份frontmatter与合并前字节相同；不是完整YAML校验",
+    "dependencies_installed": false
+  },
+  "scenario_reviews": [
+    {
+      "id": "R1",
+      "request": "从未出现过的年长旅店老板",
+      "route": [
+        "AGENTS.md",
+        ".agents/skills/manju-producer/SKILL.md",
+        ".agents/skills/manju-enrich/SKILL.md",
+        ".agents/skills/manju-visual/SKILL.md",
+        ".agents/skills/manju-prompts/SKILL.md",
+        "PROMPT_AUTHORING_STANDARD.md"
+      ],
+      "conclusion": "按当前年龄、身份、财力及处境设计；样例少年脸、黑衣、戒指不进入新角色。",
+      "evidence": [
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 22,
+          "text": "学习组织、细节密度和约束精度，不照搬特定角色的姓名、编号、年龄、性别、五官、时代、黑衣、戒指、指位、五种情绪或历史改衣命令。原样例内的生成工具、已输出尺寸、复核记录、候选状态和本机路径只是历史记录，不可复制成新任务的执行事实。"
+        },
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 103,
+          "text": "根据身份、年龄、财力、时代、气候、工作和情节处境解释造型。贫穷不自动变乞丐，普通不等于邋遢，贵族不等于全身金属。衣料重量、垂坠、克制的纹样、主次配色及视觉焦点须互相协调。"
+        },
+        {
+          "file": ".agents/skills/manju-visual/SKILL.md",
+          "line": 12,
+          "text": "为生图任务设计或扩展时先读根目录PROMPT_AUTHORING_STANDARD.md。给prompts完整的结构、比例、材料差异、实际左右/空间和版本依据；新角色按其年龄/身份设计，无图可做初设，样例不提供通用脸/衣服/饰物。半身扩全身保留已见上装，未见下装另记补充；同空间扩展固定几何与光源。"
+        }
+      ],
+      "status": "pass_text_review",
+      "assessment_method": "人工语义核对并记录真实文件/行号；非模型试写、非生图或行为效果测试"
+    },
+    {
+      "id": "R2",
+      "request": "只有设定、没有图片的新角色",
+      "route": [
+        "AGENTS.md",
+        "prompts/entry_original_script.md",
+        ".agents/skills/manju-prompts/SKILL.md",
+        "PROMPT_AUTHORING_STANDARD.md"
+      ],
+      "conclusion": "初设可直接写完整文字候选；不虚构附件、不因缺图永久阻塞。初设同样可由直接技能调用触发，无需扩写首集。",
+      "evidence": [
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 48,
+          "text": "用户已提供合格全身基准时，允许复用；半身扩全身时，只设计未展示的下装、鞋和身体延续，不能把已显示的脸和上装一并换掉。只提供文字时，不虚构“附件图1”，照常做原创候选。"
+        },
+        {
+          "file": "prompts/expand_character_masters.md",
+          "line": 9,
+          "text": "- 只有文字的新角色按共享标准第2/5节做初始候选；已有图按保留身份与造型扩展处理。合格全身图优先复用；半身扩全身只补未显示结构，写清补充依据。"
+        },
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 185,
+          "text": "每个实际请求至少保存："
+        }
+      ],
+      "status": "pass_text_review",
+      "assessment_method": "人工语义核对并记录真实文件/行号；非模型试写、非生图或行为效果测试"
+    },
+    {
+      "id": "R3",
+      "request": "一张采用全身正面图扩展母图",
+      "route": [
+        "AGENTS.md",
+        "prompts/expand_character_masters.md",
+        ".agents/skills/manju-prompts/SKILL.md",
+        ".agents/skills/manju-images/SKILL.md",
+        "DESIGN_SHEETS.md",
+        "PROMPT_AUTHORING_STANDARD.md"
+      ],
+      "conclusion": "允许直接整板候选，也保留独立图审核后拼版；不要求齐备侧背/胸像，不重新换衣；不可见结构作最小补充。原C001预填批次独立保存。",
+      "evidence": [
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 135,
+          "text": "默认允许从一张采用的正面图直接写完整母图提示词；没有侧背、胸像不自动构成阻塞。单参考只能支持可见身份，未知背部设计须记为补充，不能承诺绝对复原。"
+        },
+        {
+          "file": ".agents/skills/manju-images/SKILL.md",
+          "line": 29,
+          "text": "可用一张采用正面图直接生成整板候选并逐格检查；也可复用获准主图、派生独立图，审核后再拼版。两路不强制互换，无需先齐备侧背/胸像才允许整板；背面未知结构只作相容候选。合格源可重复用于多个版块但只按真实任务记账。每格检查脸/衣装/身体比例、场景地标与光源，整板漂亮不等于所有格通过；逐格通过且用户采用后才记录相应批准，不永久把整板路线限制为不能采用。"
+        },
+        {
+          "file": "prompts/expand_character_masters.md",
+          "line": 19,
+          "text": "## 原有C001预填批次（仅明确选用时）"
+        }
+      ],
+      "status": "pass_text_review",
+      "assessment_method": "人工语义核对并记录真实文件/行号；非模型试写、非生图或行为效果测试"
+    },
+    {
+      "id": "R4",
+      "request": "同一客栈的主视角与反打",
+      "route": [
+        "AGENTS.md",
+        "WORKFLOW_ENTRYPOINTS.md",
+        ".agents/skills/manju-visual/SKILL.md",
+        ".agents/skills/manju-prompts/SKILL.md",
+        "PROMPT_AUTHORING_STANDARD.md"
+      ],
+      "conclusion": "共用固定布局和光源，按机位推导画面左右；场景板采用自身布局，不套人物五表情。没有独立场景扩展文件，通过现有技能即可接入。",
+      "evidence": [
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 149,
+          "text": "布局使用清楚的方位或稳定坐标，另写当前相机位置和朝向，再推导画面左右。没有原文尺寸可做相称的制作提案，不把估计写成测量事实。反打时换的是摄影机，不是门窗、楼梯、柜台和灯具的实际位置。"
+        },
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 157,
+          "text": "场景板使用自己的明确布局，不把角色的五表情格式机械套过去。默认候选布局可为：顶行约50%一张主全景；中行约30%两个等宽格分别为反向视角与技术布局；底行约20%四个等宽格分别为关键交互区和三种本场景材质／结构细节。该布局是本规范新增默认，不来自人物样例，用户指定时可替换。"
+        },
+        {
+          "file": "WORKFLOW_ENTRYPOINTS.md",
+          "line": 8,
+          "text": "已有图片扩展使用prompts/expand_character_masters.md的通用分支及manju-visual/manju-prompts；任务内的C001预填资料仅属于该批次，不是默认人物。场景扩展目前无独立入口文件，直接由同两技能按共享规范第7节固定空间、换机位；道具/单镜/局部编辑分别按第7.3/8/9节，不必重新执行整集入口。"
+        }
+      ],
+      "status": "pass_text_review",
+      "assessment_method": "人工语义核对并记录真实文件/行号；非模型试写、非生图或行为效果测试"
+    },
+    {
+      "id": "R5",
+      "request": "只修母图中一个表情格",
+      "route": [
+        "AGENTS.md",
+        ".agents/skills/manju-prompts/SKILL.md",
+        ".agents/skills/manju-images/SKILL.md",
+        "templates/prompt_job.md",
+        "PROMPT_AUTHORING_STANDARD.md"
+      ],
+      "conclusion": "实际底图/版本及行列定位明确；分清头部和眼睛方向，保留其他格与造型，修正正文分文件；无图无实际问题时只作条件式预案。",
+      "evidence": [
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 177,
+          "text": "“只改袖子”也应写到哪段、收窄到哪里、保留什么颜色和材质、与袖窿及袖口如何连接。母图“只改某表情”须定位第几行第几格，区别头部朝向、眼睛视线和嘴角变化，并保留其他格与版式。"
+        },
+        {
+          "file": ".agents/skills/manju-prompts/SKILL.md",
+          "line": 22,
+          "text": "7. 局部编辑按共享标准第9节另存任务文件，与主生成正文分开；定位实际底图/版本、身体范围或行列格，列明确修改目标、具体保持项和必要光影衔接。分开头部朝向与眼睛视线，修一格不重做全板；没见结果只写条件式预案，不声称已发现或修复错误，不保证逐像素锁定。"
+        },
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 190,
+          "text": "- **局部修正**：仅在存在底图和实际问题时写可执行版本；否则说明尚无缺陷证据，不为了凑交付而编造。"
+        }
+      ],
+      "status": "pass_text_review",
+      "assessment_method": "人工语义核对并记录真实文件/行号；非模型试写、非生图或行为效果测试"
+    },
+    {
+      "id": "R6",
+      "request": "后续另一集只要一张关键帧",
+      "route": [
+        "AGENTS.md",
+        ".agents/skills/manju-producer/SKILL.md",
+        ".agents/skills/manju-prompts/SKILL.md",
+        "templates/cinematic_image_prompt.md",
+        "PROMPT_AUTHORING_STANDARD.md"
+      ],
+      "conclusion": "按实际集号与采用版本写该镜完整单幅正文；不因“完整提示词”转整集，不套全身或板格，不自动扩季。",
+      "evidence": [
+        {
+          "file": "AGENTS.md",
+          "line": 13,
+          "text": "凡编写、改写、扩展或审校人物、全身、角色母图、场景、场景母图、道具、剧情关键帧和局部编辑的生图提示词，先读取项目根目录 `PROMPT_AUTHORING_STANDARD.md` 并执行相应任务分支。此规则覆盖所有角色、场景、集数和内容入口，不限于样例任务。"
+        },
+        {
+          "file": "PROMPT_AUTHORING_STANDARD.md",
+          "line": 169,
+          "text": "景别、机位、可见区域和光线为本镜叙事服务。不要把所有镜头写成居中全身站姿；必要近景可以裁身体，不套全身图的“全手全脚入画”。镜头时长与连续动作属于视频任务，不把三秒过程画成一张多格拼图。"
+        },
+        {
+          "file": "prompts/rebuild_cinematic_visuals.md",
+          "line": 55,
+          "text": "只有用户明确要求当前整集/完整视觉包时才将calibrate_only改为full_pack，并按该范围全覆盖。“完整提示词”只约束正文精度，单角色、单场景或一张后续集数关键帧仍按明示范围完成；媒体执行不因此自动授权。"
+        },
+        {
+          "file": "templates/visual_pack_index.md",
+          "line": 2,
+          "text": "先读PROMPT_AUTHORING_STANDARD.md第10节核对本轮范围；EP01仅为模板示意，新角色、新场景与后续集数必须使用实际ID/版本。每条给完整正文定位、参考用途、补充边界与可见验收；主生成/局部修正分文件，条件式预案与可执行任务分开。单镜请求不套整集覆盖数量，母图仅显式请求时列格；整板直出与独立图拼版按实际路线分别记源。"
+        }
+      ],
+      "status": "pass_text_review",
+      "assessment_method": "人工语义核对并记录真实文件/行号；非模型试写、非生图或行为效果测试"
+    }
+  ],
+  "media_generated": false,
+  "image_quality_tested": false,
+  "creative_prompts_written": false,
+  "known_external_cost": {
+    "currency": "CNY",
+    "amount": 0
+  },
+  "missing_dedicated_entry": "prompts中无独立场景扩展文件，已通过WORKFLOW_ENTRYPOINTS及visual/prompts接入；未新建同义入口/技能"
+}

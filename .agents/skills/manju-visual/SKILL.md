@@ -1,24 +1,36 @@
 ---
 name: manju-visual
-description: "用于详细设计人物、服装、场景、道具与统一美术，主动填视觉空白并确保身份适配和空间接续；交付详细卡与参考计划，并交prompts形成必交生图正文，不实际生成。"
+description: "用于电影式人物、可穿衣装、实体场景与道具设计，主动补视觉缺口并固定身份/空间；交详细卡与必要独立参考，设定板可选，交prompts形成完整正文，不实际生成。"
 ---
 # 详细角色定妆与场景美术
 
+## 当前视觉目标与范围
+先读CINEMATIC_LOOK.md与PROJECT/STATE的当前视觉设置。cinematic_live_action使用真人电影式单幅目标；完整入口/complete_visual_pack按full_pack，已有内容的风格纠偏按rebuild_cinematic_visuals的calibrate_only，用户明示范围优先。设定板只在用户显式要求时读DESIGN_SHEETS.md并启用；它不替代实际剧情镜头校准。维护或初始化任务不进入创作/媒体执行。
+
+
 ## 输入
-读AGENTS.md、PROJECT.md、STATE.md、VISUAL_PRODUCTION.md、WORKFLOW_ENTRYPOINTS.md；读取本轮source_packet/剧本、人物资料、CMP台账、镜头需求与assets.json。允许明确授权的草稿，不以缺独立剧本、未G1/G2、缺实际参考阻塞文字。
+为生图任务设计或扩展时先读根目录PROMPT_AUTHORING_STANDARD.md。给prompts完整的结构、比例、材料差异、实际左右/空间和版本依据；新角色按其年龄/身份设计，无图可做初设，样例不提供通用脸/衣服/饰物。半身扩全身保留已见上装，未见下装另记补充；同空间扩展固定几何与光源。
+读AGENTS.md、PROJECT.md、STATE.md、CINEMATIC_LOOK.md、VISUAL_PRODUCTION.md、WORKFLOW_ENTRYPOINTS.md；显式启用设定板时读DESIGN_SHEETS.md；读取本轮source_packet/剧本、人物资料、CMP台账、镜头需求与assets.json。允许明确授权的草稿，不以缺独立剧本、未G1/G2、缺实际参考阻塞文字。
 
 ## 方法
 1. 沿用原文/用户/已确认锚点；未说明的A类细节直接设计草案并同步CMP台账。缺口不留“待用户补充”一长串，核心影响另列。上下游共同用同版卡，不各自随机补。
-2. 写STYLE_vNN：人物比例、线条、明暗、配色、材质密度、空间层次和构图/光向。风格缺失先给题材适配推荐草案，不能只写“绝美/高级/8K”。
+2. cinematic_live_action的新STYLE按CINEMATIC_LOOK.md写真人比例、自然肤色/发束、衣料受力/反光、空间接地、摄影/光源/景深/焦点。用户的风格纠正优先于旧插画表达；旧STYLE和批准保留，新稿不能混留线稿/赛璐璐要求。其他未定风格可推荐适配草案，不能只写“绝美/高级/8K”。
 3. 每角色用templates/character_design.md，写身份/财力/任务/性格表现与造型理由。脸发/身形锚点清晰；衣装内外层、剪裁、材质、主辅点缀色、鞋、配件位置、旧损/湿破状态完整。年长、贫困、劳动人物不能统一年轻华服美颜。
 4. 身份、衣装、状态和动作分开版本；人物自身左右不同于画面左右。定妆用于看清身份，不默认浓雾/遮脸/夸张海报摆拍。
 5. 每场景用templates/scene_design.md：固定空间坐标/门窗/通道/家具/表演位置，结构材质与生活痕迹、时段天气/光源。给主、反向/替代、关键区域三机位；反角不镜像重造房间。
 6. 道具写功能、大小参照、材质/反光、状态、携带/交接；不靠新增纹章/功能偷加线索。重要文字留后期。
-7. 规划每角色半身/全身/侧/背/关键表情五项、每场景三项和关键道具，交manju-prompts输出完整正文。已有草稿批次许可不等于要在每张参考计划后停工。
+7. 按本轮calibrate_only/full_pack交电影式人物、空景和已有剧情动作/互动的单幅设计，固定身份/衣装/空间与灯位，交manju-prompts展开必要独立参考和本轮逐镜正文。仅用户显式要求设定板时再按DESIGN_SHEETS.md交整板/分格/manifest，不以板面数量判断电影模式完成。缺本轮必需参考设计或正文须列明，不能在参考计划后停工。
 8. assets只登记planned/path=null；真实图片存在后再写路径。缺参考的派生条件明确，不能因文件名声称看过。
 
 ## 输出
-04_visual/STYLE_vNN.md、visual_bible_vNN.md、characters/C001_vNN.md、locations/L001_vNN.md、props/P001_vNN.md；参考任务计划与CMP回写；随后prompts按同版卡交正文。只对当前片段/首集展开，不设计全书人物。
+按本轮范围交04_visual的STYLE/详细卡/固定layout及CMP回写，prompts按同版设计交独立正文。calibrate_only可集中在LOOK_CALIBRATION_vNN.md，不强行新建整集卡；full_pack覆盖当前片段/首集。仅显式启用设定板时写sheets内规格/manifest与整板/逐格正文，不设计全书人物。
 
 ## 验收
 细节是否具体并符合此人此地？设计主次是否集中？服装与财力/天气/动作相容？场景能否完成镜头动作？身份/衣装/光源是否统一？这些是文字设计检查，不是已看过生成图的验收。
+
+## 可选角色与场景设定板（仅显式要求时）
+本节所有板面模块只在用户启用时适用，画风遵守当前look_mode，不覆盖电影式校准。主卡仍是单一设计依据；读templates/character_sheet.md、location_sheet.md、sheet_manifest.md，补04_visual/sheets与场景layout。
+角色母图默认布局按PROMPT_AUTHORING_STANDARD.md第6节：前侧背及有依据的章节姿态（无则自然三分之四站姿）、五种合角色的表情、中性脸三角度和四个适用细节格；已有明确布局保留，非主角缩减应有制作理由。没有特殊状态不凭空造火焰/变身，衣装复杂时增加必要独立细节而不破坏主板可读性。
+场景主板含主/反视角、固定平面关系和ABC机位、交互区、三类材质/生活细节；外景用地标拓扑，按需状态，不自动增加昼夜。生成俯视图不得篡改文字布局；坐标示意不冒充施工图。
+参考图取版式不默许取其内容；适配现有人物/财力/时代/任务，保持材质与审美主次。画幅独立于成片；主图留足尺寸，过密就拆附板。
+交prompts完整整板和分格正文。独立图片没生成时只交设计/映射，不声称已做成图板。

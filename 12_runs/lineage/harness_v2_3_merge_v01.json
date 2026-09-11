@@ -1,0 +1,453 @@
+{
+  "kind": "harness_maintenance",
+  "version": "2.3",
+  "status": "completed",
+  "completed_at": "2026-09-11T10:48:10.859937+08:00",
+  "approval_ref": "12_runs/approvals/harness_v2_3_merge_v01.md",
+  "report_ref": "07_reviews/upgrade_v2_3_v01.md",
+  "checks_ref": "tests/reports/v23_merge_checks_local_v01.json",
+  "baseline_ref": ".git/upgrade-backups/v2.3-20260911T104157/baseline.json",
+  "backup_archive_sha256": "7c94c0b0a701d42d6916d2f51dd7230727ba23171eed218a81de835b9ea85a33",
+  "input_manifest": {
+    "path": "ai-manju-v2.3-update/UPDATE_MANIFEST.json",
+    "sha256": "24ad3dc48c31efe54f6a0ede8333fc4efbd18286237c9ea2329a80d8d56b7a94"
+  },
+  "read_and_compared_payloads": {
+    "APPLY_WITH_CODEX.md": "a1f109451e21de6f90db910790e663a5021630982e653460bd50946f9358f16b",
+    "FILES/.agents/skills/manju-audit/SKILL.md": "fd8751fbd8c1ee1616e669bf6a447b9f95c4ea9c7ef22bb43e7182e9994b0c19",
+    "FILES/.agents/skills/manju-images/SKILL.md": "f8677d9c028f359829fb21c2664f02942786a597027b61a42514164ed79f104b",
+    "FILES/.agents/skills/manju-producer/SKILL.md": "b4fa401489eedbe9394b73142f780d5461a7b3b102532904be4f89d077934ef1",
+    "FILES/.agents/skills/manju-prompts/SKILL.md": "4a3635db69eefcf17053f002bcad2fdfd0ca835d95ac382e83a600daac44bba3",
+    "FILES/.agents/skills/manju-script/SKILL.md": "e7f12bed18b392641e4c2a636bb012c972173c5319a962d32ee480eb980ece6f",
+    "FILES/.agents/skills/manju-shots/SKILL.md": "a2468652cca1ac6ce626a3386be578b02a4c50fd873efd6818ac579b1bc30c14",
+    "FILES/.agents/skills/manju-video/SKILL.md": "782d6d369c04b622f6da47e53e4ae4a40442140d68f04cf27fac09213e6407ab",
+    "FILES/.agents/skills/manju-visual/SKILL.md": "948242793c59033a669e06bfb529a6cd652eadf8f37751282c0d562b923b2285",
+    "FILES/04_visual/README.md": "7403255d822838d33023c0dcb9029edc411533fb673abd6678675a8b0d409eb6",
+    "FILES/04_visual/references/RF_LAYOUT_USER_01.md": "dcc0f9a83a9f1bf1ca8bb444d642d23cdd6082f736d0dd101128d0dae910eb36",
+    "FILES/05_prompts/README.md": "f0d26453d25828e5e5edeecdb90bca5002b3a549966b5d1798a186f8896f2acd",
+    "FILES/06_assets/references/layout/character_sheet_layout_user_01.png": "f730cddf45edb867371fa3d92d9628ae491b4ea06e456cbb33d346d737272644",
+    "FILES/06_assets/sheets/README.md": "dfa38c59823aab886c04984ee0d69e0ee9722d71dcd2a77da69791cf6fe9d6c0",
+    "FILES/AGENTS.md": "3121c90fcccd4f6bce909a360d63f08a6b5ad022ec4ed96cbaba2fec3b809077",
+    "FILES/CAPABILITIES.md": "d063f835c40fc76afca839817fbc23811783dbee28b64111a9415d27dd63e8c2",
+    "FILES/CHANGELOG.md": "f32278ed7f2a0dc110640f4bc6603a3afab4f0a27cb8820ced0ae3be10ca9b0e",
+    "FILES/CHATGPT_PROJECT_INSTRUCTIONS.md": "a0b88e0ec2e4d0f85c8854a95ccb42e2d81ae1ab5db53a1bb286d4be100d2439",
+    "FILES/DESIGN_SHEETS.md": "51cec47e88fd0ca07762ea4010e98a6a885e6ea6e44c4656dcfe76728bf3af39",
+    "FILES/HARNESS.md": "8224b4e7bd5aa77619c541254ebde7f0599dc4a728bb9854c2fcc433f2d08dee",
+    "FILES/MIGRATION.md": "593c2a07540eb3adcfb7d8677678d76bf246dc27247dff1ca6b7307e7e07d058",
+    "FILES/PROMPT_LIBRARY.md": "ea37f7a37499bdd16781c00aee23184834f19e0c8d3ddda327054667a1b6af2b",
+    "FILES/README.md": "d6ab8544384fa8375059d8dd26437cf692d15e0c89fbaf02b562958e5f98e64e",
+    "FILES/SOURCES.md": "4dba48adffa8f60f089b08684bd477450969d1cc1e390232cce9d6468b34f151",
+    "FILES/START_HERE.md": "3410d5a2ff59e2166a71e45cd0ab9c783c1f8ea0188d6a819277bde3abd73bce",
+    "FILES/VALIDATION.md": "d145b71454314b812fb4c59e623a9c8bce4647ed25e0209506c707452ff810bd",
+    "FILES/VISUAL_PRODUCTION.md": "1849283038aedba5e0372a8cf4af3b769780701bf829d35e365d8d52dd44bbbd",
+    "FILES/WORKFLOW_ENTRYPOINTS.md": "e83aa2576cef33d08f208fb12b2b6fc7e596abf37901410e318ca917ec959652",
+    "FILES/docs/archive/MIGRATION_v22.md": "8a4df98e2ad23d8cecc285c13b824dda23d8e50531417cde75220cda0232dd33",
+    "FILES/docs/archive/README_v22.md": "3ae81ae0d8638a46b6d31177e639d2dba9c24ac5646bde2def8db3971800c3d2",
+    "FILES/docs/archive/START_HERE_v22.md": "0d3c05614b77ee64da9fcfe690308b08960ad24f066d5621cd496c554ed14f85",
+    "FILES/docs/archive/VALIDATION_v22.md": "4fbfaed3da48de2aeba5abd7571a58b00a1af46d2094a858b654b0c80ac50063",
+    "FILES/examples/design_sheets/README.md": "fc1c67dec8a991b1342c41a991e64eb475b0d55386e8ff26092f31ed94579774",
+    "FILES/examples/design_sheets/location_layout.md": "c00716b93771198a6e0672484bfbe29b77253f2147af1732c1a070c150ce9620",
+    "FILES/examples/design_sheets/worked_prompts.md": "1b8960154e6134736923c29824fa8fe23b5d0b970e4214baabd3e3928db49375",
+    "FILES/prompts/README.md": "ab6c664146437c2bc44caaebd504ccd495f4fe2dd96bf0e13848abc348f02935",
+    "FILES/prompts/complete_design_sheets.md": "4ed7d0deeb5840bbe21a4a366a4002fbc6ee072fa822f72cb3d773783412356c",
+    "FILES/prompts/complete_visual_pack.md": "dec4476f4f34f4dd7eef04867785d5d2d409ac9f32ea3b01c31d4c37260f7a03",
+    "FILES/prompts/entry_novel_direct.md": "361e053f20c49545096e13960b40248060ef26068102cb1b9242265c3c9536b6",
+    "FILES/prompts/entry_original_script.md": "c2a7aa8fec949851036f849137277c50a6553cd659bea3af6fc414c0b0964ab4",
+    "FILES/templates/character_design.md": "ae2f998490ed86518772ced63affd412ebcfd8b2e22f688f0c1260e2524b8acc",
+    "FILES/templates/character_sheet.md": "fb6081b17bab350236d0132e6da357883d43fb539c9a004dda69082cb1ba5e65",
+    "FILES/templates/location_sheet.md": "3a96882daf463e529fbd66cf3a8e33523d662c8e1e1c95545ad4aae49f5a8762",
+    "FILES/templates/prompt_job.md": "bafce12b280d87971bca0a962622818caa33952b1ab7b9d6a8e8cd1c76983b80",
+    "FILES/templates/scene_design.md": "875bc10135382d4575327ed8a95886524f3eb91856186698fb6713fc9616b66b",
+    "FILES/templates/sheet_manifest.md": "92c416e0dc244b6916239fa2701705d98463654985fabd0dc49d09e5acd22744",
+    "FILES/templates/shot_fields.md": "2987064ed9e2502a4d68a2d6daa1ba2e4bfb5d6e275b60f9e51a484089435553",
+    "FILES/templates/visual_pack_index.md": "788ff6668aeea888f2bc7f5bd1479d61f36485be7ad3e9a1900b8ce1597c47c0",
+    "FILES/tests/reports/doctor_v23.json": "09a873de1bc7738c7f30e776fd03826b2798569875ebabd731fe46d31914680c",
+    "FILES/tests/reports/v23_structure_check.json": "c743381f3304447fcf740d8a3ecb4a893bc1c7baa2e3d37f6df4d11355046b77",
+    "FILES/tests/test_design_sheets_v23.py": "98e013912b77a1711ef84b86884620f8ce9726ee37c6f3e1c73950cf30caad32",
+    "FILES/tests/unit_test_results_v23.txt": "621dd9dfc367ad7038a8ca4463a958f411c263d7b85993d3630f8c7e087a1452",
+    "MERGE_ONLY/PROJECT_v23_fields.md": "dc19772f8912339827783d7aba1ee49eb53aabaf9da58680fca563ebe5121780",
+    "MERGE_ONLY/STATE_v23_rows.md": "4d6452dc9d9c1ee62091790aee747945bbda6b4fa595a5f69710f83eaf83ebc2",
+    "README.md": "39adeb0c92c11ac18d92b021e1c708db0a47faa44fe5adff66c8f4464da3172c"
+  },
+  "modified_existing": {
+    ".agents/skills/manju-audit/SKILL.md": {
+      "before_sha256": "ea2dd26e5be168f7a5277c0b197b62dfff2ac7371743897b4a637c772623d274",
+      "after_sha256": "2da8c444ea1f2e6e7009278a7d9014c7a1bd41cbf07e88e1044bde7ef8c6322b"
+    },
+    ".agents/skills/manju-images/SKILL.md": {
+      "before_sha256": "500653f7bff2915cdb07ec4ab6c88d1ccb45bd8ffe49bc464ac863bf6121f653",
+      "after_sha256": "f8677d9c028f359829fb21c2664f02942786a597027b61a42514164ed79f104b"
+    },
+    ".agents/skills/manju-producer/SKILL.md": {
+      "before_sha256": "cd16eccec06d2ca6b0c9f02635f600118333ec1704f44bc2780e3fe4b42cc647",
+      "after_sha256": "098438c11b0af606d9097927fcc70ed660bd2e6c1b5d188c6a13cdddb5c12e5f"
+    },
+    ".agents/skills/manju-prompts/SKILL.md": {
+      "before_sha256": "69f903b08e54ffc17f6011afbbc9fd6cfda324cf9c0595811f9d26a03f06b70e",
+      "after_sha256": "484d89aeea9dbc521404862ef56cd843ff5bed0e82aaec6b7d0d0d4c1c384cf2"
+    },
+    ".agents/skills/manju-script/SKILL.md": {
+      "before_sha256": "89d22e2fe57a57d6639948cc2279fd578abf197d8210649b91023e17b68dfe3c",
+      "after_sha256": "dee28759d6b684edd05a8c36ceef6c26617bfdbd665634b2e69d203635371f63"
+    },
+    ".agents/skills/manju-shots/SKILL.md": {
+      "before_sha256": "fa4a97a573795dceeadf8094d7c852893c99d35c3c63a42c06a224d80457553f",
+      "after_sha256": "a2468652cca1ac6ce626a3386be578b02a4c50fd873efd6818ac579b1bc30c14"
+    },
+    ".agents/skills/manju-video/SKILL.md": {
+      "before_sha256": "592dfa623d127089e30a3e548c2dede11c5c4ad6dca9b3271e804fcfb43ba05f",
+      "after_sha256": "782d6d369c04b622f6da47e53e4ae4a40442140d68f04cf27fac09213e6407ab"
+    },
+    ".agents/skills/manju-visual/SKILL.md": {
+      "before_sha256": "d5cf9feaffe749aa32a8428eeabd2df9b2f03ac62babd1c6bdf63346e5766bd8",
+      "after_sha256": "a262d185f30dd72544b3065d8e4dab86169ee3dd3dd9e48988a11d3c6a582979"
+    },
+    "04_visual/README.md": {
+      "before_sha256": "f32f79872ddf19c8933ddae69d7ac15a3282c8782dfd7376b38c5af7944b5b34",
+      "after_sha256": "7403255d822838d33023c0dcb9029edc411533fb673abd6678675a8b0d409eb6"
+    },
+    "05_prompts/README.md": {
+      "before_sha256": "90d3ed1795fbe46e4e034cd6c4fee455575e186d96a023855554e0e5c2bf6650",
+      "after_sha256": "f0d26453d25828e5e5edeecdb90bca5002b3a549966b5d1798a186f8896f2acd"
+    },
+    "AGENTS.md": {
+      "before_sha256": "40bbd1a322d60a601efe1d4123fe9534bd69783a81a2e533a9afaa59ba47294b",
+      "after_sha256": "1f5064058603512e94bcf05a4c245ddb46570ec3f699243ec77d2d059a76e14b"
+    },
+    "CAPABILITIES.md": {
+      "before_sha256": "6bb813513dd13d74d40548f0283569c25e33375c441dfd6778a5bb03a1d3c1d8",
+      "after_sha256": "9a7d0ab6785368414ae773a5ce4c201afaf6f759469eb2040182e1d4b1425534"
+    },
+    "CHANGELOG.md": {
+      "before_sha256": "e175a1de3738441169bb0672b179a1c7c1b3796040963423d08b5f38c2ea3453",
+      "after_sha256": "51e4220e05f1ef3e38b22e76f812d73ee71eea0e9c329cdc390aa31ff1902e4b"
+    },
+    "CHATGPT_PROJECT_INSTRUCTIONS.md": {
+      "before_sha256": "e4dc3743a3199a03ad6f0ed3bd09bedde9bdbf1c33fb8443760d4a3026149f15",
+      "after_sha256": "a0b88e0ec2e4d0f85c8854a95ccb42e2d81ae1ab5db53a1bb286d4be100d2439"
+    },
+    "HARNESS.md": {
+      "before_sha256": "3002301e691c4314ffb6b474f2ece9ac21dba2cc07f822e411c6735fafcbb191",
+      "after_sha256": "b7ed2e9912ab826f91b8f0485ca0bbc35daaee51fa16d74db140b941d1b27b40"
+    },
+    "MIGRATION.md": {
+      "before_sha256": "8a4df98e2ad23d8cecc285c13b824dda23d8e50531417cde75220cda0232dd33",
+      "after_sha256": "bafc2b0b2367dd7d34223658fe927727c511662c654cc03a9ba6588ea21c4ea5"
+    },
+    "PROJECT.md": {
+      "before_sha256": "d746927e79eef6efddcdf9feac4eee0efff8b3d4f409676205b7014c48bdbaf0",
+      "after_sha256": "12a092731d972dde69fa9d2177f634ab21b0ebfc760103c64e0d0a5790339b1c"
+    },
+    "PROMPT_LIBRARY.md": {
+      "before_sha256": "942456444556f1a9781dc440037958cef7ab17b2f6b7ad78c8d3c66f0c52de98",
+      "after_sha256": "ea37f7a37499bdd16781c00aee23184834f19e0c8d3ddda327054667a1b6af2b"
+    },
+    "README.md": {
+      "before_sha256": "3ae81ae0d8638a46b6d31177e639d2dba9c24ac5646bde2def8db3971800c3d2",
+      "after_sha256": "4e0b06a8ac10031021edf23acd29fbdfe3f7808b125d9a72bb709b8fcdc485cc"
+    },
+    "SOURCES.md": {
+      "before_sha256": "7a9f6ac89907e30361aca580aa3922bbdd4c0fe2efc68c2798339e5474627b03",
+      "after_sha256": "59851a8bd3945d940891a737769021813ab9b3d89241c5e949436ee02b1fa305"
+    },
+    "START_HERE.md": {
+      "before_sha256": "0d3c05614b77ee64da9fcfe690308b08960ad24f066d5621cd496c554ed14f85",
+      "after_sha256": "9e0197ad0425081ebca47ea4547651dea2696da88febfbb1bedc9cfe45ade93c"
+    },
+    "STATE.md": {
+      "before_sha256": "e97329e50e737011e40daf2f401449653a6bc6f3dd4ba0456cc782c447de1b4b",
+      "after_sha256": "5db9d9b686777781bafbc8339fb6cac6364f7f7ce8d0f094392873dd2c6da050"
+    },
+    "VALIDATION.md": {
+      "before_sha256": "4fbfaed3da48de2aeba5abd7571a58b00a1af46d2094a858b654b0c80ac50063",
+      "after_sha256": "42c20ecef13f21276f0c12977cb31f5415bd79c8be088a7d9cc4c605f8aeb3de"
+    },
+    "VISUAL_PRODUCTION.md": {
+      "before_sha256": "a6ba3da1eb5cddb107d4535fae37439a9298653b16773ed6fcf2a4d4ae71bb4d",
+      "after_sha256": "54ff1ce8ef78577372919b19987c3b9b4bbbb9e7fb9c98cc5c0630204960edaf"
+    },
+    "WORKFLOW_ENTRYPOINTS.md": {
+      "before_sha256": "33d0e45b1159acad99884ab47bdab5fd9e1c757a327c687139f5b9d2517dcb48",
+      "after_sha256": "9f933e7a0b568325cc75f6509789f1055b8e5c249c5691553a8681a625143f3c"
+    },
+    "prompts/README.md": {
+      "before_sha256": "7749a7bbea8b99885752c9eaefb820624f1ee365b13fbe1819ed762691eb6a8d",
+      "after_sha256": "ab6c664146437c2bc44caaebd504ccd495f4fe2dd96bf0e13848abc348f02935"
+    },
+    "prompts/complete_visual_pack.md": {
+      "before_sha256": "1e1889230c303ded63804829fbfeb45f9823f2245ef354b45667509a609533d3",
+      "after_sha256": "378205a309969913cc358424bf2cdc27851d0d24dff328c5e73f37c0dbd0b697"
+    },
+    "prompts/entry_novel_direct.md": {
+      "before_sha256": "9ef8bc8cd1243b77eefff633b2f5c77c4e228745e9ee20346ee16fe909c8f896",
+      "after_sha256": "61493f0b5d1f5f64b34aabef35a8c8f597959ab5656d8fc13c213619084d8a32"
+    },
+    "prompts/entry_original_script.md": {
+      "before_sha256": "b113815df70062a2def3cdd2ce0e915fe97f8689192ee0da209ed710aaa57097",
+      "after_sha256": "bd3c901e96a9495bc82ab74c4eac2fb4f620080e095eea883e4dc1c1aaa85456"
+    },
+    "templates/character_design.md": {
+      "before_sha256": "c1fe343cf3f46e2a04ebbf941564b30d2e0d01cc9394c02d20449fb53ee268a3",
+      "after_sha256": "ae2f998490ed86518772ced63affd412ebcfd8b2e22f688f0c1260e2524b8acc"
+    },
+    "templates/prompt_job.md": {
+      "before_sha256": "97898c33c1811480f1c41df0a96a6453a80154a51cb5ab919c147394d3e8e351",
+      "after_sha256": "c99e1ee36faeaf5a38ffba59a9fa24e98f63eabb06187ca09fc262d0ddb93262"
+    },
+    "templates/scene_design.md": {
+      "before_sha256": "aa9feca6e1a4bd19fc44ca04dee9e723cb60f60815c668d4ad4ea1b916912f74",
+      "after_sha256": "3cea7e52354c2dc622d05eae696186843d530ccb14974eccb165001f4a602fe2"
+    },
+    "templates/shot_fields.md": {
+      "before_sha256": "3136efb09934164f25387f5bde52180e1863867a4d0deab50084265bbd3db4af",
+      "after_sha256": "19b5716f96c651f170e377bb5b07e779356feddcdc65f1f97d4bd1289551c911"
+    },
+    "templates/visual_bible.md": {
+      "before_sha256": "9b04e7c78e57ff5837baaf18fad6bcd6bc79290dea307d158ee874062941dfec",
+      "after_sha256": "2e26def714c68799d7b023fe68a81855cfe392a3528d06d1be89274d6146fe9f"
+    },
+    "templates/visual_pack_index.md": {
+      "before_sha256": "aa58fd68a2b8fa2c201e6585d7e20b80a689ec2540c6184406b5110bbc4dc5f5",
+      "after_sha256": "d3dc2a77e9f2f9462532461458290b4b1ac2fba22d520b25e773f995a92c95e8"
+    }
+  },
+  "outputs": {
+    ".agents/skills/manju-audit/SKILL.md": {
+      "sha256": "2da8c444ea1f2e6e7009278a7d9014c7a1bd41cbf07e88e1044bde7ef8c6322b",
+      "bytes": 3705
+    },
+    ".agents/skills/manju-images/SKILL.md": {
+      "sha256": "f8677d9c028f359829fb21c2664f02942786a597027b61a42514164ed79f104b",
+      "bytes": 2503
+    },
+    ".agents/skills/manju-producer/SKILL.md": {
+      "sha256": "098438c11b0af606d9097927fcc70ed660bd2e6c1b5d188c6a13cdddb5c12e5f",
+      "bytes": 4008
+    },
+    ".agents/skills/manju-prompts/SKILL.md": {
+      "sha256": "484d89aeea9dbc521404862ef56cd843ff5bed0e82aaec6b7d0d0d4c1c384cf2",
+      "bytes": 4395
+    },
+    ".agents/skills/manju-script/SKILL.md": {
+      "sha256": "dee28759d6b684edd05a8c36ceef6c26617bfdbd665634b2e69d203635371f63",
+      "bytes": 3148
+    },
+    ".agents/skills/manju-shots/SKILL.md": {
+      "sha256": "a2468652cca1ac6ce626a3386be578b02a4c50fd873efd6818ac579b1bc30c14",
+      "bytes": 4438
+    },
+    ".agents/skills/manju-video/SKILL.md": {
+      "sha256": "782d6d369c04b622f6da47e53e4ae4a40442140d68f04cf27fac09213e6407ab",
+      "bytes": 2072
+    },
+    ".agents/skills/manju-visual/SKILL.md": {
+      "sha256": "a262d185f30dd72544b3065d8e4dab86169ee3dd3dd9e48988a11d3c6a582979",
+      "bytes": 3956
+    },
+    "04_visual/README.md": {
+      "sha256": "7403255d822838d33023c0dcb9029edc411533fb673abd6678675a8b0d409eb6",
+      "bytes": 449
+    },
+    "04_visual/references/RF_LAYOUT_USER_01.md": {
+      "sha256": "05f64ffc1d6a3782502794f3fc34bc54a6360794c28d84aad5eadb651a36b001",
+      "bytes": 2023
+    },
+    "05_prompts/README.md": {
+      "sha256": "f0d26453d25828e5e5edeecdb90bca5002b3a549966b5d1798a186f8896f2acd",
+      "bytes": 709
+    },
+    "06_assets/references/layout/character_sheet_layout_user_01.png": {
+      "sha256": "f730cddf45edb867371fa3d92d9628ae491b4ea06e456cbb33d346d737272644",
+      "bytes": 1474645
+    },
+    "06_assets/sheets/README.md": {
+      "sha256": "dfa38c59823aab886c04984ee0d69e0ee9722d71dcd2a77da69791cf6fe9d6c0",
+      "bytes": 345
+    },
+    "07_reviews/upgrade_v2_3_v01.md": {
+      "sha256": "d6a3a182df6fd9e105d06bc71f64f0fddfce1f0b07d27c8daab3c35d972b41bc",
+      "bytes": 7158
+    },
+    "12_runs/approvals/harness_v2_3_merge_v01.md": {
+      "sha256": "c8763d395632ee6be38f18352283f9b0a73f88e3c6f772e9c1effa568e045a29",
+      "bytes": 1107
+    },
+    "AGENTS.md": {
+      "sha256": "1f5064058603512e94bcf05a4c245ddb46570ec3f699243ec77d2d059a76e14b",
+      "bytes": 10375
+    },
+    "CAPABILITIES.md": {
+      "sha256": "9a7d0ab6785368414ae773a5ce4c201afaf6f759469eb2040182e1d4b1425534",
+      "bytes": 3976
+    },
+    "CHANGELOG.md": {
+      "sha256": "51e4220e05f1ef3e38b22e76f812d73ee71eea0e9c329cdc390aa31ff1902e4b",
+      "bytes": 2942
+    },
+    "CHATGPT_PROJECT_INSTRUCTIONS.md": {
+      "sha256": "a0b88e0ec2e4d0f85c8854a95ccb42e2d81ae1ab5db53a1bb286d4be100d2439",
+      "bytes": 3273
+    },
+    "DESIGN_SHEETS.md": {
+      "sha256": "b3c7a7c24adc15fcfa530ce36a7c3dfd97851bac6e458e4b1f6bc37a097af846",
+      "bytes": 14283
+    },
+    "HARNESS.md": {
+      "sha256": "b7ed2e9912ab826f91b8f0485ca0bbc35daaee51fa16d74db140b941d1b27b40",
+      "bytes": 3834
+    },
+    "MIGRATION.md": {
+      "sha256": "bafc2b0b2367dd7d34223658fe927727c511662c654cc03a9ba6588ea21c4ea5",
+      "bytes": 1679
+    },
+    "PROJECT.md": {
+      "sha256": "12a092731d972dde69fa9d2177f634ab21b0ebfc760103c64e0d0a5790339b1c",
+      "bytes": 7675
+    },
+    "PROMPT_LIBRARY.md": {
+      "sha256": "ea37f7a37499bdd16781c00aee23184834f19e0c8d3ddda327054667a1b6af2b",
+      "bytes": 3639
+    },
+    "README.md": {
+      "sha256": "4e0b06a8ac10031021edf23acd29fbdfe3f7808b125d9a72bb709b8fcdc485cc",
+      "bytes": 4194
+    },
+    "SOURCES.md": {
+      "sha256": "59851a8bd3945d940891a737769021813ab9b3d89241c5e949436ee02b1fa305",
+      "bytes": 2575
+    },
+    "START_HERE.md": {
+      "sha256": "9e0197ad0425081ebca47ea4547651dea2696da88febfbb1bedc9cfe45ade93c",
+      "bytes": 2194
+    },
+    "STATE.md": {
+      "sha256": "5db9d9b686777781bafbc8339fb6cac6364f7f7ce8d0f094392873dd2c6da050",
+      "bytes": 7630
+    },
+    "VALIDATION.md": {
+      "sha256": "42c20ecef13f21276f0c12977cb31f5415bd79c8be088a7d9cc4c605f8aeb3de",
+      "bytes": 1930
+    },
+    "VISUAL_PRODUCTION.md": {
+      "sha256": "54ff1ce8ef78577372919b19987c3b9b4bbbb9e7fb9c98cc5c0630204960edaf",
+      "bytes": 17400
+    },
+    "WORKFLOW_ENTRYPOINTS.md": {
+      "sha256": "9f933e7a0b568325cc75f6509789f1055b8e5c249c5691553a8681a625143f3c",
+      "bytes": 5875
+    },
+    "docs/archive/MIGRATION_v22.md": {
+      "sha256": "8a4df98e2ad23d8cecc285c13b824dda23d8e50531417cde75220cda0232dd33",
+      "bytes": 1438
+    },
+    "docs/archive/README_v22.md": {
+      "sha256": "3ae81ae0d8638a46b6d31177e639d2dba9c24ac5646bde2def8db3971800c3d2",
+      "bytes": 3393
+    },
+    "docs/archive/START_HERE_v22.md": {
+      "sha256": "0d3c05614b77ee64da9fcfe690308b08960ad24f066d5621cd496c554ed14f85",
+      "bytes": 2647
+    },
+    "docs/archive/VALIDATION_v22.md": {
+      "sha256": "4fbfaed3da48de2aeba5abd7571a58b00a1af46d2094a858b654b0c80ac50063",
+      "bytes": 1374
+    },
+    "examples/design_sheets/README.md": {
+      "sha256": "fc1c67dec8a991b1342c41a991e64eb475b0d55386e8ff26092f31ed94579774",
+      "bytes": 807
+    },
+    "examples/design_sheets/location_layout.md": {
+      "sha256": "c00716b93771198a6e0672484bfbe29b77253f2147af1732c1a070c150ce9620",
+      "bytes": 2344
+    },
+    "examples/design_sheets/worked_prompts.md": {
+      "sha256": "1b8960154e6134736923c29824fa8fe23b5d0b970e4214baabd3e3928db49375",
+      "bytes": 34050
+    },
+    "prompts/README.md": {
+      "sha256": "ab6c664146437c2bc44caaebd504ccd495f4fe2dd96bf0e13848abc348f02935",
+      "bytes": 861
+    },
+    "prompts/complete_design_sheets.md": {
+      "sha256": "fff97744a7a198dbdaf90371f7946100ed01f81f6e1298fd9b4fe9dbd608fdc7",
+      "bytes": 3287
+    },
+    "prompts/complete_visual_pack.md": {
+      "sha256": "378205a309969913cc358424bf2cdc27851d0d24dff328c5e73f37c0dbd0b697",
+      "bytes": 4053
+    },
+    "prompts/entry_novel_direct.md": {
+      "sha256": "61493f0b5d1f5f64b34aabef35a8c8f597959ab5656d8fc13c213619084d8a32",
+      "bytes": 9023
+    },
+    "prompts/entry_original_script.md": {
+      "sha256": "bd3c901e96a9495bc82ab74c4eac2fb4f620080e095eea883e4dc1c1aaa85456",
+      "bytes": 8783
+    },
+    "templates/character_design.md": {
+      "sha256": "ae2f998490ed86518772ced63affd412ebcfd8b2e22f688f0c1260e2524b8acc",
+      "bytes": 2696
+    },
+    "templates/character_sheet.md": {
+      "sha256": "fb6081b17bab350236d0132e6da357883d43fb539c9a004dda69082cb1ba5e65",
+      "bytes": 2890
+    },
+    "templates/location_sheet.md": {
+      "sha256": "3a96882daf463e529fbd66cf3a8e33523d662c8e1e1c95545ad4aae49f5a8762",
+      "bytes": 2597
+    },
+    "templates/prompt_job.md": {
+      "sha256": "c99e1ee36faeaf5a38ffba59a9fa24e98f63eabb06187ca09fc262d0ddb93262",
+      "bytes": 2861
+    },
+    "templates/scene_design.md": {
+      "sha256": "3cea7e52354c2dc622d05eae696186843d530ccb14974eccb165001f4a602fe2",
+      "bytes": 2168
+    },
+    "templates/sheet_manifest.md": {
+      "sha256": "92c416e0dc244b6916239fa2701705d98463654985fabd0dc49d09e5acd22744",
+      "bytes": 1497
+    },
+    "templates/shot_fields.md": {
+      "sha256": "19b5716f96c651f170e377bb5b07e779356feddcdc65f1f97d4bd1289551c911",
+      "bytes": 4982
+    },
+    "templates/visual_bible.md": {
+      "sha256": "2e26def714c68799d7b023fe68a81855cfe392a3528d06d1be89274d6146fe9f",
+      "bytes": 1573
+    },
+    "templates/visual_pack_index.md": {
+      "sha256": "d3dc2a77e9f2f9462532461458290b4b1ac2fba22d520b25e773f995a92c95e8",
+      "bytes": 2519
+    },
+    "tests/reports/doctor_v23_local_v01.json": {
+      "sha256": "360299ad68fe36a87f966458e7cdde119088adbb6511b6b551f0e51f52a7927b",
+      "bytes": 1202
+    },
+    "tests/reports/v23_merge_checks_local_v01.json": {
+      "sha256": "d03e210a51033911d5741724555e9e626513e1739da86d8a79905ce5074dd74e",
+      "bytes": 16569
+    },
+    "tests/test_design_sheets_v23.py": {
+      "sha256": "98e013912b77a1711ef84b86884620f8ce9726ee37c6f3e1c73950cf30caad32",
+      "bytes": 4938
+    },
+    "tests/unit_test_results_v23_local_v01.txt": {
+      "sha256": "2cdb9fe24a2cbef2ee116b2d512fbed42943601d0e959040504def8acbffc3e8",
+      "bytes": 7153
+    }
+  },
+  "preserved_existing_count": 212,
+  "new_file_count_including_this_log": 22,
+  "self_hash_policy": "This log excludes its own hash; final backup verification records it.",
+  "unchanged_git_head": "4386a51a4d6b41001c1cf718e2fed7e960fefe5d",
+  "git_commit_or_push": false,
+  "actual_external_cost": {
+    "currency": "CNY",
+    "amount": 0
+  },
+  "external_calls": 0,
+  "media_generated": false,
+  "assembly_executed": false,
+  "existing_project_state_hash_note": "Historical logs retain hashes of their own PROJECT/STATE snapshots; no historical log was rewritten."
+}

@@ -5,6 +5,10 @@ description: "用于把确认的大纲写成可拍场景剧本，压缩台词和
 
 # 场景剧本与对白压缩
 
+## 当前视觉目标与范围
+先读CINEMATIC_LOOK.md与PROJECT/STATE的当前视觉设置。cinematic_live_action使用真人电影式单幅目标；完整入口/complete_visual_pack按full_pack，已有内容的风格纠偏按rebuild_cinematic_visuals的calibrate_only，用户明示范围优先。设定板只在用户显式要求时读DESIGN_SHEETS.md并启用；它不替代实际剧情镜头校准。维护或初始化任务不进入创作/媒体执行。
+
+
 ## 入口限制
 先读 WORKFLOW_ENTRYPOINTS.md。novel_direct 默认跳过本技能，不因想要配音而要求额外润色剧本；逐句台词由原文制作依据提取。用户明确要求改词/改剧情时先列范围和影响，批准后只做该局部，不默默切换全项目路线。
 original_script 直接接受已提供的设定与本轮简报/大纲，不要求存在小说；本轮已授权试写时不用等待大纲先获批，但整稿保持 draft。
@@ -13,7 +17,7 @@ original_script 直接接受已提供的设定与本轮简报/大纲，不要求
 读 AGENTS.md、PROJECT.md、STATE.md，以及当前采用的大纲、人物表、相关原文。使用 templates/script.md。用户仅要求压缩片段时可局部工作，但标明上下文缺失。
 
 ## 步骤
-1. 检查大纲和人物是否已确认；未确认可按本轮许可试写。v2.2入口已允许继续交enrich/visual/shots/prompts做文字草稿，不把它们当正式采用或生成权限。
+1. 检查大纲和人物是否已确认；未确认可按本轮许可试写。v2.3入口已允许继续交enrich/visual/shots/prompts做文字草稿，不把它们当正式采用或生成权限。
 2. 将每场写为“目标—对抗行动—新信息/转折—选择—离场状态”。给场次 SC01 与节拍 B01 等稳定编号。
 3. 把抽象心理转换成动作、反应、选择或有必要的旁白；不能转换时标“拍法待定”，不要编造可见事件并冒充原文。
 4. 为每句标明说话人、对谁说、要达成什么、不可丢的信息。压缩口水与重复解释，但保留否定、时间、条件、亲属关系、线索和威胁条件。
@@ -22,7 +26,7 @@ original_script 直接接受已提供的设定与本轮简报/大纲，不要求
 7. 用 PROJECT.md 假设粗估，并标“待朗读/录音校准”。必要动作与停顿不能设成零；声音与动作是否并行要说明。超过目标先提出删减或重排，而不是要求演员不自然地加速。
 
 ## 输出
-02_scripts/EP01_v01.md 与 dialogue_compare_v01.md（也可整合进剧本）。写读取版本和原文定位，保留改编补充标签。交manju-audit审校；v2.2完整入口批次继续当前集enrich/visual/shots/prompts文字草稿，不在此提前停止，不擅自拆全季分镜。
+02_scripts/EP01_v01.md 与 dialogue_compare_v01.md（也可整合进剧本）。写读取版本和原文定位，保留改编补充标签。交manju-audit审校；v2.3完整入口批次继续当前集enrich/visual/shots/prompts文字草稿，按CINEMATIC_LOOK.md和VISUAL_PRODUCTION.md交电影式必要独立参考、固定布局和当前每镜完整正文；仅用户显式要求时按DESIGN_SHEETS.md追加设定板/分格/映射。不能在剧本后提前停止，也不擅自拆全季分镜。
 
 原创剧本同时按 templates/line_sheet.json 输出 02_scripts/EP01_lines_vNN.json，保持与剧本逐句一致。定稿前两者共同复核，不能出现两套采用文本。
 

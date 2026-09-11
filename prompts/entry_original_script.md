@@ -5,7 +5,20 @@
 ```text
 $manju-producer
 
-读取 AGENTS.md、WORKFLOW_ENTRYPOINTS.md、VISUAL_PRODUCTION.md、
+读取项目根目录PROMPT_AUTHORING_STANDARD.md，按本轮人物/全身/母图/场景/道具/关键帧/局部编辑分支交完整正文与可见验收。
+简短输入不降低结构、材质、参考和空间精度；只继承原样例方法，不继承人物设定或历史修正任务。
+本规则适用新角色、新场景和后续集数；正文完整不扩大本轮范围，也不新增媒体权限。
+
+look_mode: cinematic_live_action
+visual_scope: full_pack
+asset_sheet_mode: optional
+以上为本项目当前默认；用户本轮明确风格/范围优先，不因此扩大到全书或全季。
+本轮完整范围内交必要人物/衣装/场景/道具参考与每镜正文；设定板仅显式要求时启用。
+按CINEMATIC_LOOK.md写真人电影式单幅、可信材质/表演/实体空间和具体摄影布光。
+旧STYLE的插画媒介表达若冲突，保留旧稿并写新版本，不直接复用或仅追加电影感词。
+已定画幅沿用PROJECT；录屏外框不改变作品画幅，竖版重新安排构图。
+
+读取 AGENTS.md、WORKFLOW_ENTRYPOINTS.md、CINEMATIC_LOOK.md、VISUAL_PRODUCTION.md、
 PROJECT.md、STATE.md、CAPABILITIES.md 与 config/runtime.json。
 本轮 entry_mode: original_script；visual_pack_required: true；
 completion_policy: visual_and_local_bridge_draft。
@@ -16,7 +29,7 @@ completion_policy: visual_and_local_bridge_draft。
 人物描述与关系：[姓名、身份、性格、关系，想到多少写多少]
 简短故事概述：[可不完整，可没有结局]
 类型与情绪：[例如悬疑、温暖、喜剧]
-画风与审美偏好：[没有则按故事给一个具体推荐草案]
+画风与审美偏好：[未另指定则沿用PROJECT当前电影式目标]
 必须保留的内容：[无则写暂无]
 不希望出现的内容：[无则写暂无]
 首集时长、画幅、角色和场景限制：[未填沿用PROJECT确认值]
@@ -69,12 +82,12 @@ manju-visual、manju-shots、manju-prompts的方法；需要时局部迭代。
 美感靠人物适配、轮廓、剪裁、配色主次、材质对比、空间层次和光线，
 不是一堆“绝美、高清、8K、电影感”。
 穷人不自动穿金甲，老人不美化成年轻脸；角色之间要有辨识差异。
-画风未选时先给一个适配推荐稿，不阻塞全部设计。
+本项目当前电影式目标按CINEMATIC_LOOK.md；用户另指定风格时按其选择，未定才给适配草案。
 
-每个独立识别角色：详细定妆/衣装卡 + 半身主参考、全身正面、
-侧面、背面、关键表情五类独立提示词。
-每个场景：详细布局/材质/光源卡 + 空景主视角、
-反向/替代机位、剧情关键区域三类独立提示词。
+每个独立识别角色：详细身份/衣装卡 + 主参考与当前镜头需要的全身/侧背/表情独立正文；
+不强制五类或整套板格，但必要设计和参考不能省略。
+每个场景：详细固定布局/材质/光源卡 + 空景主参考，
+以及当前镜头需要的同空间反向/替代/交互区独立正文；不为凑板格加新地点。
 关键道具：独立提示词；没有则注明不适用。
 每个镜头：一条完整可复制静态关键帧提示词，不仅示范头几镜。
 局部修改：至少人物和场景各一种单一区域的条件式修正预案。
@@ -92,6 +105,24 @@ manju-visual、manju-shots、manju-prompts的方法；需要时局部迭代。
 但与我的硬设定冲突时先说明，不偷偷删除必要人物或挤掉因果。
 只做本轮首集，不扩写全季。
 
+
+【可选设定板与单图交付：仅用户显式要求时启用】
+本节全部数量、整板/逐格正文、输出与拼版检查仅适用于已启用的设定板范围；
+未启用时不据此判电影式完整包缺项。启用后读取DESIGN_SHEETS.md，角色/场景板分别按共享规范第6/7.2节选默认布局；具体格数与保持项逐格展开。
+只借版式参考的多视角/表情/细节组织，画风仍沿当前look_mode；不复制参考脸、红黑服装、面具或魔法。
+每主要角色增加：整板探索提示词、同状态全身正/指定侧/背、
+五种适配表情、中性脸正/四分之三/侧、至少三类必要服装/脸发/道具细节；
+角色母图默认布局按共享规范第6节，已有明示布局保留；没有章节动作时第四格用自然三分之四站姿，特殊状态只有故事需要时才加。
+每场景增加：整板探索提示词、主/反向视角、固定俯视布局与机位说明、
+关键交互区、至少三类材质生活细节；日夜/事件版本按需要，不硬加。
+媒体路线保留采用正面图直接出整板候选、独立图审核后仅排版两种；不要求先齐备全部侧背图或额外胸像才写整板正文。本轮按范围交完整整板/单格正文及拼版映射，只规划媒体步骤，不执行媒体，也不以步骤计划代替正文。
+各格有完整独立正文和任务定位，已有合格主图或提示词可复用并说明。
+仍保留每镜独立关键帧提示词；分格、标签和色卡不带进镜头或视频首帧。
+写04_visual/sheets内规格与manifest拼版映射、05_prompts/sheets内整板提示词，
+更新visual_pack_index并交design_sheet_review。停止前逐资产、逐格、逐镜核对真实文件与任务定位；缺必需正文或映射必须列ID并标未完成，旧五类/三类不再是整包完成条件。
+没有实际参考/拼版工具不阻塞文字，但图路径null、拼版unconfigured。
+本轮不实际生成、裁图或拼板；不能把“提示词写好”说成“图已完成”。
+
 【交付】
 01_story/story_bible_vNN.md、characters_vNN.md、episode_outline_vNN.md
 01_story/EP01_completion_ledger_vNN.md
@@ -99,11 +130,15 @@ manju-visual、manju-shots、manju-prompts的方法；需要时局部迭代。
 03_shots/EP01_shots_vNN.json及同版.md、EP01_continuity_vNN.md
 04_visual/STYLE_vNN.md及characters/、locations/、props/详细卡
 05_prompts/characters/、locations/、props/、shots/、edits/完整提示词
+仅显式启用设定板时：04_visual/sheets/*_sheet_vNN.md与*_manifest_vNN.md
+04_visual/locations/*_layout_vNN.md
+仅显式启用设定板时：05_prompts/sheets/characters/与locations/整板正文及逐格定位
 05_prompts/EP01_visual_pack_index_vNN.md
+仅显式启用设定板时：07_reviews/EP01_design_sheet_review_vNN.md
 07_reviews/EP01_script_review_vNN.md
 07_reviews/EP01_visual_continuity_review_vNN.md
 
-按VISUAL_PRODUCTION.md核对任务覆盖、细节具体性、人物适配、
+按CINEMATIC_LOOK.md与VISUAL_PRODUCTION.md逐资产/逐镜核对完整正文、布局/灯位、细节具体性、人物适配、
 图文设定一致、空间动作与时长接续；填写真实已输出文件和仍缺项。
 已有版本递增，不覆盖；更新STATE但不自动标G1/G2通过。
 没有小说记not_required_by_mode，缺生成模型不阻塞提示词。

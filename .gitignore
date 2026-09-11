@@ -27,6 +27,8 @@ __pycache__/
 !11_exports/delivery/README.md
 12_runs/logs/*
 !12_runs/logs/README.md
+# Local recovery archives may contain retired work prompts and project snapshots.
+12_runs/archives/
 __pycache__/
 *.pyc
 .render_*/

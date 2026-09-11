@@ -1,0 +1,85 @@
+{
+  "source_filename": "6d03e7d6cdbd36a90d7d830adb433bd8.mp4",
+  "source_sha256": "eca0dfd1c12e3adda9e4bc1fc2377dd9856606a428af81b3b35d6abc8c9b4254",
+  "source_duration_s": 149.333333,
+  "source_size": [
+    448,
+    960
+  ],
+  "crop_xywh": [
+    0,
+    280,
+    448,
+    252
+  ],
+  "enhancement": "none",
+  "reference_status": "user_supplied_look_analysis_not_story_asset",
+  "audio_reviewed": false,
+  "ocr_used": false,
+  "frames": [
+    {
+      "timestamp_s": 3,
+      "path": "reference_crops/ref_003s.png",
+      "sha256": "9579b9cdc46844e33a8c4a4b8179218984f6c893d5a014b03976603820146075",
+      "width": 448,
+      "height": 252,
+      "role": "look_analysis_only"
+    },
+    {
+      "timestamp_s": 7,
+      "path": "reference_crops/ref_007s.png",
+      "sha256": "206f5db8a61649c0a8a8ae8c7c5b709ecaf7cce534380d59970b05fb2dba473a",
+      "width": 448,
+      "height": 252,
+      "role": "look_analysis_only"
+    },
+    {
+      "timestamp_s": 37,
+      "path": "reference_crops/ref_037s.png",
+      "sha256": "023e15b610fb1c1db74e29f9e8a19be3174de2e4e372b088aa91a9c8c9a88dc4",
+      "width": 448,
+      "height": 252,
+      "role": "look_analysis_only"
+    },
+    {
+      "timestamp_s": 53,
+      "path": "reference_crops/ref_053s.png",
+      "sha256": "061cdad758bf1de286553d17f8786704464410e9f4a372006875434806b86eed",
+      "width": 448,
+      "height": 252,
+      "role": "look_analysis_only"
+    },
+    {
+      "timestamp_s": 82,
+      "path": "reference_crops/ref_082s.png",
+      "sha256": "e66ef042fd4443bb27db5769669580d6401c95e9dcbb3d149676ed73b3eaa63e",
+      "width": 448,
+      "height": 252,
+      "role": "look_analysis_only"
+    },
+    {
+      "timestamp_s": 103,
+      "path": "reference_crops/ref_103s.png",
+      "sha256": "c35ca98e98027adf7f612b2987107d22c91f337e22684d99b698ec0cee221a4f",
+      "width": 448,
+      "height": 252,
+      "role": "look_analysis_only"
+    },
+    {
+      "timestamp_s": 118,
+      "path": "reference_crops/ref_118s.png",
+      "sha256": "11ad3b0e09bf745dbb39bd25cd95c8743e6eddeb93121881827b108998a20b32",
+      "width": 448,
+      "height": 252,
+      "role": "look_analysis_only"
+    },
+    {
+      "timestamp_s": 142,
+      "path": "reference_crops/ref_142s.png",
+      "sha256": "1fd3dd4bec9ecee573247b9afecbccaae48e78281f94ff52d1d260829fcda305",
+      "width": 448,
+      "height": 252,
+      "role": "look_analysis_only"
+    }
+  ]
+}

@@ -1,13 +1,17 @@
-# v2.2 验证记录｜2026-09-10
+# v2.3验证范围与本机检查索引
 
-## 本轮实际执行
-- `python3 -m unittest discover -s tests -v`：原有56项测试全部通过。实际输出保存在tests/unit_test_results.txt。
-- 本地`python3 tools/studio.py doctor --root .`识别十五个技能并列出本环境依赖；这不是用户Mac环境，也不是Codex已加载技能的证据。
-- 406项结构/文本规则存在性检查通过，详见tests/reports/v22_structure_check.json；其中包括十五个技能元数据、入口引用共同规范、新模板与示例、JSON可解析性、工具/配置/数据契约未变，以及选定旧规则的冲突扫描。
+本次合并采用本机实际执行结果，见07_reviews/upgrade_v2_3_v01.md。原v2.2说明归档为docs/archive/VALIDATION_v22.md，原测试与媒体报告保持原样。
 
-## 范围边界
-本次没有新增程序级视觉质量检查器；结构和关键词检查不代表自然语言任务一定正确执行，不证明全部潜在语义冲突已消除。
-没有执行Codex端到端、没有在用户Mac测试、没有调用生图/配音/视频服务、没有重新运行媒体渲染测试。没有生成正式图片或音视频。
+## 本机检查
+- 单元测试与新增14项设定板静态检查：tests/unit_test_results_v23_local_v01.txt。
+- Python/FFmpeg/ffprobe及十五技能探测：tests/reports/doctor_v23_local_v01.json。
+- 合并范围、原文件保留、四入口交接和引用/哈希核对：tests/reports/v23_merge_checks_local_v01.json。
+执行状态和结果以这些实际文件及维护报告为准；仅有规范或测试文件不算检查通过。
 
-新增的是manju-enrich技能、主动补全规范、详细视觉模板和强制提示词交付规则。它们不能保证原文忠实度、审美、人物一致性或商业效果；实际输出仍要文字复核和生成后目检。
-原v2/v2.1的媒体/结构报告是历史记录，不冒充本轮新增能力验证；上一版说明保存在docs/archive/VALIDATION_v21.md。
+## 更新包历史材料
+历史说明为ai-manju-v2.3-update/FILES/VALIDATION.md；原始报告均在该更新包的FILES目录下：tests/unit_test_results_v23.txt、tests/reports/doctor_v23.json、tests/reports/v23_structure_check.json。它们记录的是更新包制作环境，保留在更新目录，不复制成当前项目测试结果，不把其中70项、149项或Linux探测报告当作本机证据。
+
+## 能证明与不能证明的内容
+新增测试核对静态规范、技能元数据、入口引用、PNG头部尺寸/哈希与教学示例文本；不是让Codex实际创作的端到端测试，也不证明人物适配、审美、原文忠实度或真实图片一致性。测试中的examples仅教学/测试资料，不作为正式故事。
+skill-creator附带的quick_validate.py因本机缺少PyYAML未能运行；未安装依赖。另用Python标准库核对本项目实际使用的简单name/description元数据、命名和占位，结果并入本机合并检查记录；不声称通用YAML校验器通过。
+本次不运行媒体渲染集成测试，不生成/编辑/裁图/拼版，不调用声音、视频或外部API。实际生图、拼版、配音、视频、自动对齐及NLE服务仍unconfigured；FFmpeg既有基础工具能力不变。
